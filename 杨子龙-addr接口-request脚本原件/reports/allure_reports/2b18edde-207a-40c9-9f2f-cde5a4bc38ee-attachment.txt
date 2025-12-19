@@ -1,0 +1,25 @@
+INFO     api_automation:test_executor.py:28 开始执行测试用例: 2 - 地址模块-添加地址接口-参数校验-缺少收货人姓名返回缺少必要参数
+INFO     api_automation:test_executor.py:92 发送 POST 请求到 /api/address/add
+INFO     api_automation:request_handler.py:163 ==================================================
+INFO     api_automation:request_handler.py:164 请求方法: POST
+INFO     api_automation:request_handler.py:165 Curl命令: curl -X POST --data-raw '{"username": "test", "phone": "13800138000", "province": "广东省", "city": "深圳市", "district": "南山区", "detail": "科技园路1号", "is_default": 1}' -H 'Authorization: Bearer 4AB527C4318B39FB74B4BA1ABBCC226B' -H 'Content-Type: application/json' http://192.168.31.131:6666/api/address/add
+INFO     api_automation:request_handler.py:166 请求URL: http://192.168.31.131:6666/api/address/add
+INFO     api_automation:request_handler.py:167 请求头: {
+  "Authorization": "Bearer 4AB527C4318B39FB74B4BA1ABBCC226B",
+  "Content-Type": "application/json"
+}
+INFO     api_automation:request_handler.py:173 通过content-type检查到为json类型，请求开始发送
+INFO     api_automation:request_handler.py:175 请求JSON数据: {
+  "username": "test",
+  "phone": "13800138000",
+  "province": "广东省",
+  "city": "深圳市",
+  "district": "南山区",
+  "detail": "科技园路1号",
+  "is_default": 1
+}
+INFO     api_automation:request_handler.py:206 ------------------------------
+WARNING  urllib3.connectionpool:connectionpool.py:868 Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000219D8EEFE00>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /api/address/add
+WARNING  urllib3.connectionpool:connectionpool.py:868 Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000219D8EED400>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /api/address/add
+WARNING  urllib3.connectionpool:connectionpool.py:868 Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000219D8EED1F0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /api/address/add
+ERROR    api_automation:request_handler.py:243 请求失败: HTTPConnectionPool(host='192.168.31.131', port=6666): Max retries exceeded with url: /api/address/add (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000219D8EED010>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
