@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Dec 18 17:50:42 CST 2025","Thu Dec 18 17:50:42 CST 2025","603","tests","test_create_list","","","","test_create_list[C001-\u6b63\u5e38\u521b\u5efa]",""
+"passed","Thu Dec 18 17:50:42 CST 2025","Thu Dec 18 17:50:43 CST 2025","1201","tests","test_create_list","","","","test_create_list[C002-name\u4e3a\u7a7a]",""
+"passed","Thu Dec 18 17:50:43 CST 2025","Thu Dec 18 17:50:44 CST 2025","733","tests","test_query_list","","","","test_query_list[Q001-\u6b63\u5e38\u67e5\u8be2]",""
+"passed","Thu Dec 18 17:50:44 CST 2025","Thu Dec 18 17:50:50 CST 2025","5620","tests","test_toggle_video","","","","test_toggle_chain[T001-tg\u4e24\u6b21\u7ffb\u8f6c]",""

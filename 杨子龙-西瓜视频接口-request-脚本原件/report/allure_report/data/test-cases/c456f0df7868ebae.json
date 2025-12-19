@@ -1,0 +1,86 @@
+{
+  "uid" : "c456f0df7868ebae",
+  "name" : "test_toggle_chain[T001-tg\\u4e24\\u6b21\\u7ffb\\u8f6c]",
+  "fullName" : "tests.test_toggle_video#test_toggle_chain",
+  "historyId" : "b2f82f7c8a6073752477df5d8db72d7c",
+  "time" : {
+    "start" : 1766051444692,
+    "stop" : 1766051450312,
+    "duration" : 5620
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "apis",
+    "time" : {
+      "start" : 1766051444691,
+      "stop" : 1766051444692,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "client",
+    "time" : {
+      "start" : 1766051444691,
+      "stop" : 1766051444691,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_toggle_video"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-A7LNAG5"
+  }, {
+    "name" : "thread",
+    "value" : "18848-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_toggle_video"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'id': 'T001', 'title': 'tg两次翻转', 'video_id': '91', 'expect_http': 200, 'expect_status': 200}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c456f0df7868ebae.json",
+  "parameterValues" : [ "{'id': 'T001', 'title': 'tg两次翻转', 'video_id': '91', 'expect_http': 200, 'expect_status': 200}" ]
+}

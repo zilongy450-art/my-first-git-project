@@ -1,0 +1,13 @@
+- id: C001
+  title: 正常创建
+  name: "po自动化_${ts}"
+  pr: 1
+  expect_http: 200
+  expect_status: 200
+
+- id: C002
+  title: name为空
+  name: ""
+  pr: 1
+  expect_http: 200
+  expect_status: 400   # 这里按你实际返回改
