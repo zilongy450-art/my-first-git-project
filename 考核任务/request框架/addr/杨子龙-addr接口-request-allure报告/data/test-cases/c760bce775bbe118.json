@@ -1,0 +1,243 @@
+{
+  "uid" : "c760bce775bbe118",
+  "name" : "test_api_case[1 - 地址模块-添加地址接口-正向-传入完整合法参数返回地址添加成功]",
+  "fullName" : "testcases.test_api_excel_driver.TestAllDrivers#test_api_case",
+  "historyId" : "e44cb39d743c5d36f1bcb9c2ea93c9a8",
+  "time" : {
+    "start" : 1765333285364,
+    "stop" : 1765333285525,
+    "duration" : 161
+  },
+  "description" : "\n        利用执行器执行用例\n\n        Args:\n            case (dict): 测试用例数据\n            request_handler: 请求处理器fixture\n        ",
+  "descriptionHtml" : "<pre><code>    利用执行器执行用例\n\n    Args:\n        case (dict): 测试用例数据\n        request_handler: 请求处理器fixture\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "request_handler",
+    "time" : {
+      "start" : 1765333285358,
+      "stop" : 1765333285362,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "data_handler",
+    "time" : {
+      "start" : 1765333285362,
+      "stop" : 1765333285363,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_xunit_setup_method_fixture_TestAllDrivers",
+    "time" : {
+      "start" : 1765333285363,
+      "stop" : 1765333285363,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "clear_data_handler",
+    "time" : {
+      "start" : 1765333285363,
+      "stop" : 1765333285363,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        利用执行器执行用例\n\n        Args:\n            case (dict): 测试用例数据\n            request_handler: 请求处理器fixture\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "执行用例: 1 - 地址模块-添加地址接口-正向-传入完整合法参数返回地址添加成功",
+      "time" : {
+        "start" : 1765333285365,
+        "stop" : 1765333285525,
+        "duration" : 160
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c9298f69d7b65589",
+        "name" : "Curl命令",
+        "source" : "c9298f69d7b65589.txt",
+        "type" : "text/plain",
+        "size" : 345
+      }, {
+        "uid" : "7ece67b65cb326b",
+        "name" : "请求URL",
+        "source" : "7ece67b65cb326b.txt",
+        "type" : "text/plain",
+        "size" : 42
+      }, {
+        "uid" : "fd75c1bcb788f3fa",
+        "name" : "请求头",
+        "source" : "fd75c1bcb788f3fa.json",
+        "type" : "application/json",
+        "size" : 102
+      }, {
+        "uid" : "7c66e14b071d0ba9",
+        "name" : "请求JSON数据",
+        "source" : "7c66e14b071d0ba9.json",
+        "type" : "application/json",
+        "size" : 198
+      }, {
+        "uid" : "d8bedc84e596ace8",
+        "name" : "响应状态码",
+        "source" : "d8bedc84e596ace8.txt",
+        "type" : "text/plain",
+        "size" : 3
+      }, {
+        "uid" : "6351723e343ceff4",
+        "name" : "响应头",
+        "source" : "6351723e343ceff4.json",
+        "type" : "application/json",
+        "size" : 223
+      }, {
+        "uid" : "96b579a801b4d41f",
+        "name" : "响应体",
+        "source" : "96b579a801b4d41f.txt",
+        "type" : "text/plain",
+        "size" : 70
+      }, {
+        "uid" : "7851c50484590c8d",
+        "name" : "提取变量: address_id1",
+        "source" : "7851c50484590c8d.txt",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "166fb417cc70d526",
+        "name" : "当前变量",
+        "source" : "166fb417cc70d526.json",
+        "type" : "application/json",
+        "size" : 27
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 9,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "5898ab359c16842d",
+      "name" : "log",
+      "source" : "5898ab359c16842d.txt",
+      "type" : "text/plain",
+      "size" : 3204
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestAllDrivers::0",
+    "time" : {
+      "start" : 1765333285527,
+      "stop" : 1765333285527,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "clear_data_handler::0",
+    "time" : {
+      "start" : 1765333285528,
+      "stop" : 1765333285528,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Excel测试用例执行"
+  }, {
+    "name" : "feature",
+    "value" : "API接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_api_excel_driver"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAllDrivers"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-A7LNAG5"
+  }, {
+    "name" : "thread",
+    "value" : "1056-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_api_excel_driver"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'case_id': '1', 'case_name': '地址模块-添加地址接口-正向-传入完整合法参数返回地址添加成功', 'method': 'POST', 'url': '/api/address/add', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n  \"username\": \"test\",\\n  \"name\": \"张三\",\\n  \"phone\": \"13800138000\",\\n  \"province\": \"广东省\",\\n  \"city\": \"深圳市\",\\n  \"district\": \"南山区\",\\n  \"detail\": \"科技园路1号\",\\n  \"is_default\": 1\\n}\\n', 'expected_status': '201', 'expected_content': '\"success\": true, \"message\": \"地址添加成功\"', 'json_path': '', 'expected_json_value': '', 'extract_key': 'address_id1=json.address_id', 'save_var_name': '', 'validate': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c760bce775bbe118.json",
+  "parameterValues" : [ "{'case_id': '1', 'case_name': '地址模块-添加地址接口-正向-传入完整合法参数返回地址添加成功', 'method': 'POST', 'url': '/api/address/add', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n  \"username\": \"test\",\\n  \"name\": \"张三\",\\n  \"phone\": \"13800138000\",\\n  \"province\": \"广东省\",\\n  \"city\": \"深圳市\",\\n  \"district\": \"南山区\",\\n  \"detail\": \"科技园路1号\",\\n  \"is_default\": 1\\n}\\n', 'expected_status': '201', 'expected_content': '\"success\": true, \"message\": \"地址添加成功\"', 'json_path': '', 'expected_json_value': '', 'extract_key': 'address_id1=json.address_id', 'save_var_name': '', 'validate': ''}" ]
+}

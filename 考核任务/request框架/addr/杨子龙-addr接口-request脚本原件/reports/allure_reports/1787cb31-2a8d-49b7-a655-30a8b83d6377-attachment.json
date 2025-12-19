@@ -1,0 +1,9 @@
+{
+  "username": "test",
+  "name": "张三",
+  "province": "广东省",
+  "city": "深圳市",
+  "district": "南山区",
+  "detail": "科技园路1号",
+  "is_default": 1
+}

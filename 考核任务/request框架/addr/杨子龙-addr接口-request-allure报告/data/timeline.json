@@ -1,0 +1,273 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-A7LNAG5",
+    "children" : [ {
+      "name" : "1056-MainThread",
+      "children" : [ {
+        "name" : "test_api_case[12 - 地址模块-更新地址接口-参数校验-缺少address_id返回缺少地址ID]",
+        "uid" : "a9fc2ca8f8fb17de",
+        "parentUid" : "2255278708139db68a2db9ac6ce9f277",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765333286772,
+          "stop" : 1765333286890,
+          "duration" : 118
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '12', 'case_name': '地址模块-更新地址接口-参数校验-缺少address_id返回缺少地址ID', 'method': 'POST', 'url': '/api/address/update', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n  \"username\": \"test\",\\n  \"name\": \"李四\",\\n  \"phone\": \"13900139000\"\\n}', 'expected_status': '400', 'expected_content': '{\\n    \"success\": false,\\n    \"message\": \"缺少地址ID\"\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[11 - 地址模块-更新地址接口-正向-缺少phone应返回更新成功]",
+        "uid" : "6849daf95de2835f",
+        "parentUid" : "2255278708139db68a2db9ac6ce9f277",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765333286667,
+          "stop" : 1765333286760,
+          "duration" : 93
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '11', 'case_name': '地址模块-更新地址接口-正向-缺少phone应返回更新成功', 'method': 'POST', 'url': '/api/address/update', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n  \"username\": \"test\",\\n  \"address_id\": {{address_id1}},\\n  \"name\": \"李四\"\\n}', 'expected_status': '200', 'expected_content': '{\\n    \"success\": true,\\n    \"message\": \"地址更新成功\"\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[19 - 地址模块-设置默认地址接口-异常-传入不存在的address_id返回地址不存在或无权限操作]",
+        "uid" : "9bff33944b97eddf",
+        "parentUid" : "2255278708139db68a2db9ac6ce9f277",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765333287621,
+          "stop" : 1765333287686,
+          "duration" : 65
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '19', 'case_name': '地址模块-设置默认地址接口-异常-传入不存在的address_id返回地址不存在或无权限操作', 'method': 'POST', 'url': '/api/address/set_default', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n    \"username\": \"test\",\\n    \"address_id\": 999999\\n}', 'expected_status': '404', 'expected_content': '{\"success\": false, \"message\": \"地址不存在或无权限操作\"}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[9 - 地址模块-删除地址接口-参数校验-缺少address_id按应返回参数错误]",
+        "uid" : "1702da568b911bd5",
+        "parentUid" : "2255278708139db68a2db9ac6ce9f277",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765333286387,
+          "stop" : 1765333286457,
+          "duration" : 70
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '9', 'case_name': '地址模块-删除地址接口-参数校验-缺少address_id按应返回参数错误', 'method': 'POST', 'url': '/api/address/delete', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n  \"username\": \"test\"\\n}', 'expected_status': '400', 'expected_content': '{\\n    \"success\": false,\\n    \"message\": \"缺少地址ID\"\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[20 - 地址模块-设置默认地址接口-参数校验-缺少address_id返回参数错误]",
+        "uid" : "65448cca5953dba3",
+        "parentUid" : "2255278708139db68a2db9ac6ce9f277",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765333287696,
+          "stop" : 1765333287745,
+          "duration" : 49
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '20', 'case_name': '地址模块-设置默认地址接口-参数校验-缺少address_id返回参数错误', 'method': 'POST', 'url': '/api/address/set_default', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n    \"username\": \"test\"\\n}', 'expected_status': '400', 'expected_content': '{\"success\": false, \"message\": \"缺少地址ID\"}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[8 - 地址模块-删除地址接口-异常-username为空]",
+        "uid" : "efa924704618056d",
+        "parentUid" : "2255278708139db68a2db9ac6ce9f277",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765333286306,
+          "stop" : 1765333286362,
+          "duration" : 56
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '8', 'case_name': '地址模块-删除地址接口-异常-username为空', 'method': 'POST', 'url': '/api/address/delete', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n  \"username\": \"\",\\n  \"address_id\": ${address_id1}\\n}', 'expected_status': '401', 'expected_content': '\"success\": false, \"data\": null, \"message\": \"缺少用户名或Token\"', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[15 - 地址模块-查询地址列表接口-参数校验-username错误返回验证失败]",
+        "uid" : "473d838c05bf3422",
+        "parentUid" : "2255278708139db68a2db9ac6ce9f277",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765333287326,
+          "stop" : 1765333287384,
+          "duration" : 58
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '15', 'case_name': '地址模块-查询地址列表接口-参数校验-username错误返回验证失败', 'method': 'POST', 'url': '/api/address/list', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n    \"username\": \"abc\"\\n}', 'expected_status': '401', 'expected_content': '\"success\": false, \"data\": null, \"message\": \"Token验证失败\"', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[10 - 地址模块-更新地址接口-正向-传入合法address_id修改姓名和手机号成功]",
+        "uid" : "f8a7d03a51529432",
+        "parentUid" : "2255278708139db68a2db9ac6ce9f277",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765333286478,
+          "stop" : 1765333286659,
+          "duration" : 181
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '10', 'case_name': '地址模块-更新地址接口-正向-传入合法address_id修改姓名和手机号成功', 'method': 'POST', 'url': '/api/address/update', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n  \"username\": \"test\",\\n  \"address_id\": ${address_id1},\\n  \"name\": \"李四\",\\n  \"phone\": \"13900139000\"\\n}', 'expected_status': '200', 'expected_content': '{\\n    \"success\": true,\\n    \"message\": \"地址更新成功\"\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[13 - 地址模块-更新地址接口-异常-传入不存在的address_id按设计返回地址不存在或无权限操作]",
+        "uid" : "4a6ad25a1f96d52d",
+        "parentUid" : "2255278708139db68a2db9ac6ce9f277",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765333286899,
+          "stop" : 1765333286950,
+          "duration" : 51
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '13', 'case_name': '地址模块-更新地址接口-异常-传入不存在的address_id按设计返回地址不存在或无权限操作', 'method': 'POST', 'url': '/api/address/update', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n  \"username\": \"test\",\\n  \"address_id\": 999999,\\n  \"name\": \"李四\",\\n  \"phone\": \"13900139000\"\\n}', 'expected_status': '404', 'expected_content': '{\\n    \"success\": false,\\n    \"message\": \"地址不存在或无权限修改\"\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[7 - 地址模块-删除地址接口-异常-传入不存在的address_id返回地址不存在或无权限删除]",
+        "uid" : "d312855a70ef7049",
+        "parentUid" : "2255278708139db68a2db9ac6ce9f277",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765333286132,
+          "stop" : 1765333286296,
+          "duration" : 164
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '7', 'case_name': '地址模块-删除地址接口-异常-传入不存在的address_id返回地址不存在或无权限删除', 'method': 'POST', 'url': '/api/address/delete', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n  \"username\": \"test\",\\n  \"address_id\": 999999\\n}', 'expected_status': '404', 'expected_content': '{\\n    \"success\": false,\\n    \"message\": \"地址不存在或无权限删除\"\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[6 - 地址模块-删除地址接口-正向-传入存在的address_id删除成功]",
+        "uid" : "adcb9205fdf10abf",
+        "parentUid" : "2255278708139db68a2db9ac6ce9f277",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765333285981,
+          "stop" : 1765333286115,
+          "duration" : 134
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '6', 'case_name': '地址模块-删除地址接口-正向-传入存在的address_id删除成功', 'method': 'POST', 'url': '/api/address/delete', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n  \"username\": \"test\",\\n  \"address_id\": ${address_id2}\\n}', 'expected_status': '200', 'expected_content': '{\\n  \"success\": true,\\n  \"message\": \"地址删除成功\"\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[17 - 地址模块-查询地址列表接口-参数校验-缺少username字段返回缺少用户名]",
+        "uid" : "a37fd7c9ff16c5dc",
+        "parentUid" : "2255278708139db68a2db9ac6ce9f277",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765333287455,
+          "stop" : 1765333287502,
+          "duration" : 47
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '17', 'case_name': '地址模块-查询地址列表接口-参数校验-缺少username字段返回缺少用户名', 'method': 'POST', 'url': '/api/address/list', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n    \\n}', 'expected_status': '401', 'expected_content': '\"success\": false, \"data\": null, \"message\": \"缺少用户名或Token\"', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[4 - 地址模块-添加地址接口-参数校验-缺少详细地址返回缺少必要参数]",
+        "uid" : "c783a289934ab167",
+        "parentUid" : "2255278708139db68a2db9ac6ce9f277",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765333285705,
+          "stop" : 1765333285821,
+          "duration" : 116
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '4', 'case_name': '地址模块-添加地址接口-参数校验-缺少详细地址返回缺少必要参数', 'method': 'POST', 'url': '/api/address/add', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n  \"username\": \"test\",\\n  \"name\": \"张三\",\\n  \"phone\": \"13800138000\",\\n  \"province\": \"广东省\",\\n  \"city\": \"深圳市\",\\n  \"district\": \"南山区\",\\n  \"is_default\": 1\\n}\\n', 'expected_status': '400', 'expected_content': '{\"success\": false, \"message\": \"缺少必要参数\"}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[16 - 地址模块-查询地址列表接口-参数校验-username为空返回缺少用户名]",
+        "uid" : "1b1c0a501e0a2ca6",
+        "parentUid" : "2255278708139db68a2db9ac6ce9f277",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765333287394,
+          "stop" : 1765333287444,
+          "duration" : 50
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '16', 'case_name': '地址模块-查询地址列表接口-参数校验-username为空返回缺少用户名', 'method': 'POST', 'url': '/api/address/list', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n    \"username\": \"\"\\n}', 'expected_status': '401', 'expected_content': '\"success\": false, \"data\": null, \"message\": \"缺少用户名或Token\"', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[2 - 地址模块-添加地址接口-参数校验-缺少收货人姓名返回缺少必要参数]",
+        "uid" : "b122a25cfca8f1bd",
+        "parentUid" : "2255278708139db68a2db9ac6ce9f277",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765333285535,
+          "stop" : 1765333285616,
+          "duration" : 81
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '2', 'case_name': '地址模块-添加地址接口-参数校验-缺少收货人姓名返回缺少必要参数', 'method': 'POST', 'url': '/api/address/add', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n  \"username\": \"test\",\\n  \"phone\": \"13800138000\",\\n  \"province\": \"广东省\",\\n  \"city\": \"深圳市\",\\n  \"district\": \"南山区\",\\n  \"detail\": \"科技园路1号\",\\n  \"is_default\": 1\\n}\\n', 'expected_status': '400', 'expected_content': '{\"success\": false, \"message\": \"缺少必要参数\"}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[14 - 地址模块-查询地址列表接口-正向-用户存在多条地址返回完整地址列表]",
+        "uid" : "b6d2c5b0554af5e4",
+        "parentUid" : "2255278708139db68a2db9ac6ce9f277",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765333286958,
+          "stop" : 1765333287314,
+          "duration" : 356
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '14', 'case_name': '地址模块-查询地址列表接口-正向-用户存在多条地址返回完整地址列表', 'method': 'POST', 'url': '/api/address/list', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n    \"username\": \"test\"\\n}', 'expected_status': '200', 'expected_content': '\"success\": true, \"message\": \"查询成功\"', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[5 - 地址模块-添加地址接口-正向-设置is_default为0]",
+        "uid" : "64208a4c98ae9be7",
+        "parentUid" : "2255278708139db68a2db9ac6ce9f277",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765333285835,
+          "stop" : 1765333285968,
+          "duration" : 133
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '5', 'case_name': '地址模块-添加地址接口-正向-设置is_default为0', 'method': 'POST', 'url': '/api/address/add', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n  \"username\": \"test\",\\n  \"name\": \"张三\",\\n  \"phone\": \"13800138000\",\\n  \"province\": \"广东省\",\\n  \"city\": \"深圳市\",\\n  \"district\": \"南山区\",\\n  \"detail\": \"科技园路1号\",\\n  \"is_default\": 1\\n}\\n', 'expected_status': '201', 'expected_content': '\"success\": true, \"message\": \"地址添加成功\"', 'json_path': '', 'expected_json_value': '', 'extract_key': 'address_id2=json.address_id', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[3 - 地址模块-添加地址接口-参数校验-缺少手机号返回缺少必要参数]",
+        "uid" : "2a793659cad307bf",
+        "parentUid" : "2255278708139db68a2db9ac6ce9f277",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765333285627,
+          "stop" : 1765333285696,
+          "duration" : 69
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '3', 'case_name': '地址模块-添加地址接口-参数校验-缺少手机号返回缺少必要参数', 'method': 'POST', 'url': '/api/address/add', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n  \"username\": \"test\",\\n  \"name\": \"张三\",\\n  \"province\": \"广东省\",\\n  \"city\": \"深圳市\",\\n  \"district\": \"南山区\",\\n  \"detail\": \"科技园路1号\",\\n  \"is_default\": 1\\n}\\n', 'expected_status': '400', 'expected_content': '{\"success\": false, \"message\": \"缺少必要参数\"}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[18 - 地址模块-设置默认地址接口-正向-传入存在的address_id设置默认地址成功且唯一]",
+        "uid" : "29ce0d8da3c3317c",
+        "parentUid" : "2255278708139db68a2db9ac6ce9f277",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765333287511,
+          "stop" : 1765333287612,
+          "duration" : 101
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '18', 'case_name': '地址模块-设置默认地址接口-正向-传入存在的address_id设置默认地址成功且唯一', 'method': 'POST', 'url': '/api/address/set_default', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n    \"username\": \"test\",\\n    \"address_id\": {{address_id1}}\\n}', 'expected_status': '200', 'expected_content': '{\\n    \"success\": true,\\n    \"message\": \"默认地址设置成功\"\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[1 - 地址模块-添加地址接口-正向-传入完整合法参数返回地址添加成功]",
+        "uid" : "c760bce775bbe118",
+        "parentUid" : "2255278708139db68a2db9ac6ce9f277",
+        "status" : "passed",
+        "time" : {
+          "start" : 1765333285364,
+          "stop" : 1765333285525,
+          "duration" : 161
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '1', 'case_name': '地址模块-添加地址接口-正向-传入完整合法参数返回地址添加成功', 'method': 'POST', 'url': '/api/address/add', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n  \"username\": \"test\",\\n  \"name\": \"张三\",\\n  \"phone\": \"13800138000\",\\n  \"province\": \"广东省\",\\n  \"city\": \"深圳市\",\\n  \"district\": \"南山区\",\\n  \"detail\": \"科技园路1号\",\\n  \"is_default\": 1\\n}\\n', 'expected_status': '201', 'expected_content': '\"success\": true, \"message\": \"地址添加成功\"', 'json_path': '', 'expected_json_value': '', 'extract_key': 'address_id1=json.address_id', 'save_var_name': '', 'validate': ''}" ]
+      } ],
+      "uid" : "2255278708139db68a2db9ac6ce9f277"
+    } ],
+    "uid" : "64c3aaf2f8066f7ed0c6201dc350f976"
+  } ]
+}

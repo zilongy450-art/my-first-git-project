@@ -1,0 +1,231 @@
+{
+  "uid" : "a37fd7c9ff16c5dc",
+  "name" : "test_api_case[17 - 地址模块-查询地址列表接口-参数校验-缺少username字段返回缺少用户名]",
+  "fullName" : "testcases.test_api_excel_driver.TestAllDrivers#test_api_case",
+  "historyId" : "008d8335f80b93de9d28dc3d739180d5",
+  "time" : {
+    "start" : 1765333287455,
+    "stop" : 1765333287502,
+    "duration" : 47
+  },
+  "description" : "\n        利用执行器执行用例\n\n        Args:\n            case (dict): 测试用例数据\n            request_handler: 请求处理器fixture\n        ",
+  "descriptionHtml" : "<pre><code>    利用执行器执行用例\n\n    Args:\n        case (dict): 测试用例数据\n        request_handler: 请求处理器fixture\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "request_handler",
+    "time" : {
+      "start" : 1765333285358,
+      "stop" : 1765333285362,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "data_handler",
+    "time" : {
+      "start" : 1765333285362,
+      "stop" : 1765333285363,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "clear_data_handler",
+    "time" : {
+      "start" : 1765333287452,
+      "stop" : 1765333287452,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_xunit_setup_method_fixture_TestAllDrivers",
+    "time" : {
+      "start" : 1765333287453,
+      "stop" : 1765333287453,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        利用执行器执行用例\n\n        Args:\n            case (dict): 测试用例数据\n            request_handler: 请求处理器fixture\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "执行用例: 17 - 地址模块-查询地址列表接口-参数校验-缺少username字段返回缺少用户名",
+      "time" : {
+        "start" : 1765333287455,
+        "stop" : 1765333287502,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e431d0c5ac2a4f9d",
+        "name" : "Curl命令",
+        "source" : "e431d0c5ac2a4f9d.txt",
+        "type" : "text/plain",
+        "size" : 168
+      }, {
+        "uid" : "a60d3499e98bb57c",
+        "name" : "请求URL",
+        "source" : "a60d3499e98bb57c.txt",
+        "type" : "text/plain",
+        "size" : 43
+      }, {
+        "uid" : "68e1f0148469c79a",
+        "name" : "请求头",
+        "source" : "68e1f0148469c79a.json",
+        "type" : "application/json",
+        "size" : 102
+      }, {
+        "uid" : "f9a7a4a2509f2306",
+        "name" : "响应状态码",
+        "source" : "f9a7a4a2509f2306.txt",
+        "type" : "text/plain",
+        "size" : 3
+      }, {
+        "uid" : "95db9c9877422aaf",
+        "name" : "响应头",
+        "source" : "95db9c9877422aaf.json",
+        "type" : "application/json",
+        "size" : 224
+      }, {
+        "uid" : "64613ad74ee6c073",
+        "name" : "响应体",
+        "source" : "64613ad74ee6c073.txt",
+        "type" : "text/plain",
+        "size" : 135
+      }, {
+        "uid" : "4730c9b6c4935251",
+        "name" : "当前变量",
+        "source" : "4730c9b6c4935251.json",
+        "type" : "application/json",
+        "size" : 52
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 7,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "eb421f229f26a889",
+      "name" : "log",
+      "source" : "eb421f229f26a889.txt",
+      "type" : "text/plain",
+      "size" : 2589
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 8,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestAllDrivers::0",
+    "time" : {
+      "start" : 1765333287504,
+      "stop" : 1765333287504,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "clear_data_handler::0",
+    "time" : {
+      "start" : 1765333287505,
+      "stop" : 1765333287505,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Excel测试用例执行"
+  }, {
+    "name" : "feature",
+    "value" : "API接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_api_excel_driver"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAllDrivers"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-A7LNAG5"
+  }, {
+    "name" : "thread",
+    "value" : "1056-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_api_excel_driver"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'case_id': '17', 'case_name': '地址模块-查询地址列表接口-参数校验-缺少username字段返回缺少用户名', 'method': 'POST', 'url': '/api/address/list', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n    \\n}', 'expected_status': '401', 'expected_content': '\"success\": false, \"data\": null, \"message\": \"缺少用户名或Token\"', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a37fd7c9ff16c5dc.json",
+  "parameterValues" : [ "{'case_id': '17', 'case_name': '地址模块-查询地址列表接口-参数校验-缺少username字段返回缺少用户名', 'method': 'POST', 'url': '/api/address/list', 'headers': '{\\n  \"Authorization\": \"Bearer 4AB527C4318B39FB74B4BA1ABBCC226B\",\\n  \"Content-Type\": \"application/json\"\\n}\\n', 'params': '', 'body': '{\\n    \\n}', 'expected_status': '401', 'expected_content': '\"success\": false, \"data\": null, \"message\": \"缺少用户名或Token\"', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+}

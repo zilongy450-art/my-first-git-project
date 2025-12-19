@@ -1,0 +1,221 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-A7LNAG5",
+    "children" : [ {
+      "name" : "15684-MainThread",
+      "children" : [ {
+        "name" : "test_api_case[6 - 列表模块-创建列表接口-请求方式错误-用错误的请求方式创建列表失败返回错误的请求]",
+        "uid" : "62ac0bd96a2b2339",
+        "parentUid" : "d30e7786c9b1a0df5fef432d1bd63825",
+        "status" : "passed",
+        "time" : {
+          "start" : 1764925720435,
+          "stop" : 1764925720769,
+          "duration" : 334
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '6', 'case_name': '列表模块-创建列表接口-请求方式错误-用错误的请求方式创建列表失败返回错误的请求', 'method': 'GET', 'url': '/aj/lists?type=list&a=new', 'headers': '{\\n  \"Accept\": \"application/json, text/javascript, */*; q=0.01\",\\n  \"Accept-Encoding\": \"gzip, deflate\",\\n  \"Accept-Language\": \"zh-CN,zh;q=0.9\",\\n  \"Content-Length\": \"98\",\\n  \"Content-Type\": \"application/x-www-form-urlencoded; charset=UTF-8\",\\n  \"Cookie\": \"mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; PHPSESSID=sqr9mmvquakk4u9v2ovddjjjcj; r=c3RyaW5n; Hm_lvt_777b72b6411a140ccea21069556babac=1764034490,1764308798,1764558449,1764756516; HMACCOUNT=57B056F1CFF19C07; auto=; last_ads_seen=1764863384; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764984301%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; Hm_lpvt_777b72b6411a140ccea21069556babac=1764898973\",\\n  \"Host\": \"www.ixigua.net\",\\n  \"Origin\": \"http://www.ixigua.net\",\\n  \"Proxy-Connection\": \"keep-alive\",\\n  \"Referer\": \"http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html\",\\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\",\\n  \"X-Requested-With\": \"XMLHttpRequest\"\\n}', 'params': '', 'body': 'hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&name=抓包视频&desc=&pr=1', 'expected_status': '200', 'expected_content': '{\\n    \"status\": 400,\\n    \"message\": \"bad-request\"\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[12 - 列表模块-添加视频接口-正向关联场景-把查询接口查询到的最新创建的列表list给把添加视频到最新创建的列表里]",
+        "uid" : "318c2c78dfe0a482",
+        "parentUid" : "d30e7786c9b1a0df5fef432d1bd63825",
+        "status" : "passed",
+        "time" : {
+          "start" : 1764925724332,
+          "stop" : 1764925724520,
+          "duration" : 188
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '12', 'case_name': '列表模块-添加视频接口-正向关联场景-把查询接口查询到的最新创建的列表list给把添加视频到最新创建的列表里', 'method': 'GET', 'url': 'aj/lists?hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&type=list&a=tg&id=464&list=qI7pTXWk3MEOpq1', 'headers': '{\\n  \"Accept\": \"application/json, text/javascript, */*; q=0.01\",\\n  \"Accept-Encoding\": \"gzip, deflate\",\\n  \"Accept-Language\": \"zh-CN,zh;q=0.9\",\\n  \"Cookie\": \"mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; PHPSESSID=sqr9mmvquakk4u9v2ovddjjjcj; r=c3RyaW5n; Hm_lvt_777b72b6411a140ccea21069556babac=1764034490,1764308798,1764558449,1764756516; HMACCOUNT=57B056F1CFF19C07; auto=; last_ads_seen=1764863384; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764984301%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; Hm_lpvt_777b72b6411a140ccea21069556babac=1764902184\",\\n  \"Host\": \"www.ixigua.net\",\\n  \"Proxy-Connection\": \"keep-alive\",\\n  \"Referer\": \"http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html\",\\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\",\\n  \"X-Requested-With\": \"XMLHttpRequest\"\\n}', 'params': '', 'body': 'hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&type=list&a=tg&id=464&list=qI7pTXWk3MEOpq1', 'expected_status': '200', 'expected_content': '{\\n    \"status\": 200,\\n    \"code\": 1,\\n    \"name\": \"抓包视频\"\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[15 - 列表模块-添加视频接口-参数校验-视频实际不存在返回错误提示]",
+        "uid" : "43d98ff5c0cfd4f7",
+        "parentUid" : "d30e7786c9b1a0df5fef432d1bd63825",
+        "status" : "passed",
+        "time" : {
+          "start" : 1764925726330,
+          "stop" : 1764925726526,
+          "duration" : 196
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '15', 'case_name': '列表模块-添加视频接口-参数校验-视频实际不存在返回错误提示', 'method': 'GET', 'url': 'aj/lists?hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&type=list&a=tg&id=abc&list=${list_id}', 'headers': '{\\n  \"Accept\": \"application/json, text/javascript, */*; q=0.01\",\\n  \"Accept-Encoding\": \"gzip, deflate\",\\n  \"Accept-Language\": \"zh-CN,zh;q=0.9\",\\n  \"Cookie\": \"mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; PHPSESSID=sqr9mmvquakk4u9v2ovddjjjcj; r=c3RyaW5n; Hm_lvt_777b72b6411a140ccea21069556babac=1764034490,1764308798,1764558449,1764756516; HMACCOUNT=57B056F1CFF19C07; auto=; last_ads_seen=1764863384; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764984301%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; Hm_lpvt_777b72b6411a140ccea21069556babac=1764902184\",\\n  \"Host\": \"www.ixigua.net\",\\n  \"Proxy-Connection\": \"keep-alive\",\\n  \"Referer\": \"http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html\",\\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\",\\n  \"X-Requested-With\": \"XMLHttpRequest\"\\n}', 'params': '', 'body': 'hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&type=list&a=tg&id=abc&list=${list_id}', 'expected_status': '200', 'expected_content': '{\\n    \"status\": 400\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[8 - 列表模块-查询列表接口-正向-新建列表后查询返回html中包含该列表并可解析list_id]",
+        "uid" : "43b862ba48de5674",
+        "parentUid" : "d30e7786c9b1a0df5fef432d1bd63825",
+        "status" : "passed",
+        "time" : {
+          "start" : 1764925721812,
+          "stop" : 1764925722350,
+          "duration" : 538
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '8', 'case_name': '列表模块-查询列表接口-正向-新建列表后查询返回html中包含该列表并可解析list_id', 'method': 'GET', 'url': '/aj/lists?hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&type=list&a=add&id=464', 'headers': '{\\n  \"Accept\": \"application/json, text/javascript, */*; q=0.01\",\\n  \"Accept-Encoding\": \"gzip, deflate\",\\n  \"Accept-Language\": \"zh-CN,zh;q=0.9\",\\n  \"Cookie\": \"mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; PHPSESSID=sqr9mmvquakk4u9v2ovddjjjcj; r=c3RyaW5n; Hm_lvt_777b72b6411a140ccea21069556babac=1764034490,1764308798,1764558449,1764756516; HMACCOUNT=57B056F1CFF19C07; auto=; last_ads_seen=1764863384; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764984301%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; Hm_lpvt_777b72b6411a140ccea21069556babac=1764902184\",\\n  \"Host\": \"www.ixigua.net\",\\n  \"Proxy-Connection\": \"keep-alive\",\\n  \"Referer\": \"http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html\",\\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\",\\n  \"X-Requested-With\": \"XMLHttpRequest\"\\n}', 'params': '', 'body': 'hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&type=list&a=add&id=464', 'expected_status': '200', 'expected_content': '\"status\":200', 'json_path': '', 'expected_json_value': '', 'extract_key': 'list_id=regex:playlist-item\" id=\"([^\"]+)\"[\\\\s\\\\S]*?>\\\\s*抓包视频\\\\s*<', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[4 - 列表模块-创建列表接口-边界值-列表名称长度等于0字（下限）创建失败]",
+        "uid" : "a608493aaeac119a",
+        "parentUid" : "d30e7786c9b1a0df5fef432d1bd63825",
+        "status" : "passed",
+        "time" : {
+          "start" : 1764925718503,
+          "stop" : 1764925719455,
+          "duration" : 952
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '4', 'case_name': '列表模块-创建列表接口-边界值-列表名称长度等于0字（下限）创建失败', 'method': 'POST', 'url': '/aj/lists?type=list&a=new', 'headers': '{\\n  \"Accept\": \"application/json, text/javascript, */*; q=0.01\",\\n  \"Accept-Encoding\": \"gzip, deflate\",\\n  \"Accept-Language\": \"zh-CN,zh;q=0.9\",\\n  \"Content-Length\": \"98\",\\n  \"Content-Type\": \"application/x-www-form-urlencoded; charset=UTF-8\",\\n  \"Cookie\": \"mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; PHPSESSID=sqr9mmvquakk4u9v2ovddjjjcj; r=c3RyaW5n; Hm_lvt_777b72b6411a140ccea21069556babac=1764034490,1764308798,1764558449,1764756516; HMACCOUNT=57B056F1CFF19C07; auto=; last_ads_seen=1764863384; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764984301%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; Hm_lpvt_777b72b6411a140ccea21069556babac=1764898973\",\\n  \"Host\": \"www.ixigua.net\",\\n  \"Origin\": \"http://www.ixigua.net\",\\n  \"Proxy-Connection\": \"keep-alive\",\\n  \"Referer\": \"http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html\",\\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\",\\n  \"X-Requested-With\": \"XMLHttpRequest\"\\n}', 'params': '', 'body': 'hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&name=&desc=&pr=1', 'expected_status': '200', 'expected_content': '{\\n    \"status\": 400\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[9 - 列表模块-查询列表接口-参数校验-查询列表的类型不是列表并返回类型找不到的错误请求提示]",
+        "uid" : "7041c000e00c4e57",
+        "parentUid" : "d30e7786c9b1a0df5fef432d1bd63825",
+        "status" : "passed",
+        "time" : {
+          "start" : 1764925722361,
+          "stop" : 1764925722574,
+          "duration" : 213
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '9', 'case_name': '列表模块-查询列表接口-参数校验-查询列表的类型不是列表并返回类型找不到的错误请求提示', 'method': 'GET', 'url': '/aj/lists?hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&type=abc&a=add&id=464', 'headers': '{\\n  \"Accept\": \"application/json, text/javascript, */*; q=0.01\",\\n  \"Accept-Encoding\": \"gzip, deflate\",\\n  \"Accept-Language\": \"zh-CN,zh;q=0.9\",\\n  \"Cookie\": \"mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; PHPSESSID=sqr9mmvquakk4u9v2ovddjjjcj; r=c3RyaW5n; Hm_lvt_777b72b6411a140ccea21069556babac=1764034490,1764308798,1764558449,1764756516; HMACCOUNT=57B056F1CFF19C07; auto=; last_ads_seen=1764863384; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764984301%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; Hm_lpvt_777b72b6411a140ccea21069556babac=1764902184\",\\n  \"Host\": \"www.ixigua.net\",\\n  \"Proxy-Connection\": \"keep-alive\",\\n  \"Referer\": \"http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html\",\\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\",\\n  \"X-Requested-With\": \"XMLHttpRequest\"\\n}', 'params': '', 'body': 'hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&type=abc&a=add&id=464', 'expected_status': '200', 'expected_content': '{\\n    \"error\": 404,\\n    \"error_message\": \"type not found\"\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[14 - 列表模块-添加视频接口-参数校验-类型不是列表且返回列表没有找到的错误请求提示]",
+        "uid" : "7dac6fe4c7f77c2f",
+        "parentUid" : "d30e7786c9b1a0df5fef432d1bd63825",
+        "status" : "passed",
+        "time" : {
+          "start" : 1764925725388,
+          "stop" : 1764925726322,
+          "duration" : 934
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '14', 'case_name': '列表模块-添加视频接口-参数校验-类型不是列表且返回列表没有找到的错误请求提示', 'method': 'GET', 'url': 'aj/lists?hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&type=abc&a=tg&id=464&list=${list_id}', 'headers': '{\\n  \"Accept\": \"application/json, text/javascript, */*; q=0.01\",\\n  \"Accept-Encoding\": \"gzip, deflate\",\\n  \"Accept-Language\": \"zh-CN,zh;q=0.9\",\\n  \"Cookie\": \"mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; PHPSESSID=sqr9mmvquakk4u9v2ovddjjjcj; r=c3RyaW5n; Hm_lvt_777b72b6411a140ccea21069556babac=1764034490,1764308798,1764558449,1764756516; HMACCOUNT=57B056F1CFF19C07; auto=; last_ads_seen=1764863384; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764984301%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; Hm_lpvt_777b72b6411a140ccea21069556babac=1764902184\",\\n  \"Host\": \"www.ixigua.net\",\\n  \"Proxy-Connection\": \"keep-alive\",\\n  \"Referer\": \"http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html\",\\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\",\\n  \"X-Requested-With\": \"XMLHttpRequest\"\\n}', 'params': '', 'body': 'hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&type=abc&a=tg&id=464&list=${list_id}', 'expected_status': '200', 'expected_content': '{\\n    \"error\": 404,\\n    \"error_message\": \"type not found\"\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[11 - 西瓜播放列表模块-查询播放列表接口-参数校验-动作标识a非add返回空数值]",
+        "uid" : "351d921cd0b8333e",
+        "parentUid" : "d30e7786c9b1a0df5fef432d1bd63825",
+        "status" : "passed",
+        "time" : {
+          "start" : 1764925723458,
+          "stop" : 1764925724322,
+          "duration" : 864
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '11', 'case_name': '西瓜播放列表模块-查询播放列表接口-参数校验-动作标识a非add返回空数值', 'method': 'GET', 'url': '/aj/lists?hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&type=list&a=abc&id=464', 'headers': '{\\n  \"Accept\": \"application/json, text/javascript, */*; q=0.01\",\\n  \"Accept-Encoding\": \"gzip, deflate\",\\n  \"Accept-Language\": \"zh-CN,zh;q=0.9\",\\n  \"Cookie\": \"mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; PHPSESSID=sqr9mmvquakk4u9v2ovddjjjcj; r=c3RyaW5n; Hm_lvt_777b72b6411a140ccea21069556babac=1764034490,1764308798,1764558449,1764756516; HMACCOUNT=57B056F1CFF19C07; auto=; last_ads_seen=1764863384; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764984301%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; Hm_lpvt_777b72b6411a140ccea21069556babac=1764902184\",\\n  \"Host\": \"www.ixigua.net\",\\n  \"Proxy-Connection\": \"keep-alive\",\\n  \"Referer\": \"http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html\",\\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\",\\n  \"X-Requested-With\": \"XMLHttpRequest\"\\n}', 'params': '', 'body': 'hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&type=list&a=abc&id=464', 'expected_status': '200', 'expected_content': '[]', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[7 - 列表模块-创建列表接口-正向-描述字段非空且包含特殊字符创建成功]",
+        "uid" : "17dee5e9f274f7b2",
+        "parentUid" : "d30e7786c9b1a0df5fef432d1bd63825",
+        "status" : "passed",
+        "time" : {
+          "start" : 1764925720793,
+          "stop" : 1764925721800,
+          "duration" : 1007
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '7', 'case_name': '列表模块-创建列表接口-正向-描述字段非空且包含特殊字符创建成功', 'method': 'POST', 'url': '/aj/lists?type=list&a=new', 'headers': '{\\n  \"Accept\": \"application/json, text/javascript, */*; q=0.01\",\\n  \"Accept-Encoding\": \"gzip, deflate\",\\n  \"Accept-Language\": \"zh-CN,zh;q=0.9\",\\n  \"Content-Length\": \"98\",\\n  \"Content-Type\": \"application/x-www-form-urlencoded; charset=UTF-8\",\\n  \"Cookie\": \"mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; PHPSESSID=sqr9mmvquakk4u9v2ovddjjjcj; r=c3RyaW5n; Hm_lvt_777b72b6411a140ccea21069556babac=1764034490,1764308798,1764558449,1764756516; HMACCOUNT=57B056F1CFF19C07; auto=; last_ads_seen=1764863384; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764984301%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; Hm_lpvt_777b72b6411a140ccea21069556babac=1764898973\",\\n  \"Host\": \"www.ixigua.net\",\\n  \"Origin\": \"http://www.ixigua.net\",\\n  \"Proxy-Connection\": \"keep-alive\",\\n  \"Referer\": \"http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html\",\\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\",\\n  \"X-Requested-With\": \"XMLHttpRequest\"\\n}', 'params': '', 'body': 'hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&name=抓包视频-desc&desc=这是测试描述！~@#￥%&*&pr=1', 'expected_status': '200', 'expected_content': '{\\n    \"status\": 200\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[13 - 列表模块-添加视频接口-场景-同一视频再次调用接口从播放列表中移除]",
+        "uid" : "b22c95edc48a277b",
+        "parentUid" : "d30e7786c9b1a0df5fef432d1bd63825",
+        "status" : "passed",
+        "time" : {
+          "start" : 1764925724529,
+          "stop" : 1764925725380,
+          "duration" : 851
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '13', 'case_name': '列表模块-添加视频接口-场景-同一视频再次调用接口从播放列表中移除', 'method': 'GET', 'url': 'aj/lists?hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&type=list&a=tg&id=464&list=qI7pTXWk3MEOpq1', 'headers': '{\\n  \"Accept\": \"application/json, text/javascript, */*; q=0.01\",\\n  \"Accept-Encoding\": \"gzip, deflate\",\\n  \"Accept-Language\": \"zh-CN,zh;q=0.9\",\\n  \"Cookie\": \"mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; PHPSESSID=sqr9mmvquakk4u9v2ovddjjjcj; r=c3RyaW5n; Hm_lvt_777b72b6411a140ccea21069556babac=1764034490,1764308798,1764558449,1764756516; HMACCOUNT=57B056F1CFF19C07; auto=; last_ads_seen=1764863384; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764984301%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; Hm_lpvt_777b72b6411a140ccea21069556babac=1764902184\",\\n  \"Host\": \"www.ixigua.net\",\\n  \"Proxy-Connection\": \"keep-alive\",\\n  \"Referer\": \"http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html\",\\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\",\\n  \"X-Requested-With\": \"XMLHttpRequest\"\\n}', 'params': '', 'body': 'hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&type=list&a=tg&id=464&list=qI7pTXWk3MEOpq1', 'expected_status': '200', 'expected_content': '{\\n    \"status\": 200,\\n    \"code\": 0,\\n    \"name\": \"抓包视频\"\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[3 - 列表模块-创建列表接口-边界值-列表名称长度等于30字（上限）成功创建列表]",
+        "uid" : "12300f18893678a8",
+        "parentUid" : "d30e7786c9b1a0df5fef432d1bd63825",
+        "status" : "passed",
+        "time" : {
+          "start" : 1764925717652,
+          "stop" : 1764925718493,
+          "duration" : 841
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '3', 'case_name': '列表模块-创建列表接口-边界值-列表名称长度等于30字（上限）成功创建列表', 'method': 'POST', 'url': '/aj/lists?type=list&a=new', 'headers': '{\\n  \"Accept\": \"application/json, text/javascript, */*; q=0.01\",\\n  \"Accept-Encoding\": \"gzip, deflate\",\\n  \"Accept-Language\": \"zh-CN,zh;q=0.9\",\\n  \"Content-Length\": \"98\",\\n  \"Content-Type\": \"application/x-www-form-urlencoded; charset=UTF-8\",\\n  \"Cookie\": \"mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; PHPSESSID=sqr9mmvquakk4u9v2ovddjjjcj; r=c3RyaW5n; Hm_lvt_777b72b6411a140ccea21069556babac=1764034490,1764308798,1764558449,1764756516; HMACCOUNT=57B056F1CFF19C07; auto=; last_ads_seen=1764863384; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764984301%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; Hm_lpvt_777b72b6411a140ccea21069556babac=1764898973\",\\n  \"Host\": \"www.ixigua.net\",\\n  \"Origin\": \"http://www.ixigua.net\",\\n  \"Proxy-Connection\": \"keep-alive\",\\n  \"Referer\": \"http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html\",\\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\",\\n  \"X-Requested-With\": \"XMLHttpRequest\"\\n}', 'params': '', 'body': 'hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&name=123456789012345678901234567890&desc=&pr=1', 'expected_status': '200', 'expected_content': '{\\n    \"status\": 200\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[16 - 列表模块-添加视频接口-参数校验-列表不存在返回添加的视频名字是空的返回提示（即接口返回成功但列表名称为空）]",
+        "uid" : "5dd45b1272ce422d",
+        "parentUid" : "d30e7786c9b1a0df5fef432d1bd63825",
+        "status" : "passed",
+        "time" : {
+          "start" : 1764925726535,
+          "stop" : 1764925727451,
+          "duration" : 916
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '16', 'case_name': '列表模块-添加视频接口-参数校验-列表不存在返回添加的视频名字是空的返回提示（即接口返回成功但列表名称为空）', 'method': 'GET', 'url': 'aj/lists?hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&type=list&a=tg&id=464&list=abc', 'headers': '{\\n  \"Accept\": \"application/json, text/javascript, */*; q=0.01\",\\n  \"Accept-Encoding\": \"gzip, deflate\",\\n  \"Accept-Language\": \"zh-CN,zh;q=0.9\",\\n  \"Cookie\": \"mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; PHPSESSID=sqr9mmvquakk4u9v2ovddjjjcj; r=c3RyaW5n; Hm_lvt_777b72b6411a140ccea21069556babac=1764034490,1764308798,1764558449,1764756516; HMACCOUNT=57B056F1CFF19C07; auto=; last_ads_seen=1764863384; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764984301%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; Hm_lpvt_777b72b6411a140ccea21069556babac=1764902184\",\\n  \"Host\": \"www.ixigua.net\",\\n  \"Proxy-Connection\": \"keep-alive\",\\n  \"Referer\": \"http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html\",\\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\",\\n  \"X-Requested-With\": \"XMLHttpRequest\"\\n}', 'params': '', 'body': 'hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&type=list&a=tg&id=464&list=abc', 'expected_status': '200', 'expected_content': '{\\n    \"status\": 200,\\n    \"code\": 1,\\n    \"name\": null\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[10 - 列表模块-查询列表接口-参数校验-查询的视频实际不存在返回空数值]",
+        "uid" : "a0827f85f31a2a67",
+        "parentUid" : "d30e7786c9b1a0df5fef432d1bd63825",
+        "status" : "passed",
+        "time" : {
+          "start" : 1764925722581,
+          "stop" : 1764925723449,
+          "duration" : 868
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '10', 'case_name': '列表模块-查询列表接口-参数校验-查询的视频实际不存在返回空数值', 'method': 'GET', 'url': '/aj/lists?hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&type=list&a=add&id=abc', 'headers': '{\\n  \"Accept\": \"application/json, text/javascript, */*; q=0.01\",\\n  \"Accept-Encoding\": \"gzip, deflate\",\\n  \"Accept-Language\": \"zh-CN,zh;q=0.9\",\\n  \"Cookie\": \"mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; PHPSESSID=sqr9mmvquakk4u9v2ovddjjjcj; r=c3RyaW5n; Hm_lvt_777b72b6411a140ccea21069556babac=1764034490,1764308798,1764558449,1764756516; HMACCOUNT=57B056F1CFF19C07; auto=; last_ads_seen=1764863384; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764984301%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; Hm_lpvt_777b72b6411a140ccea21069556babac=1764902184\",\\n  \"Host\": \"www.ixigua.net\",\\n  \"Proxy-Connection\": \"keep-alive\",\\n  \"Referer\": \"http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html\",\\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\",\\n  \"X-Requested-With\": \"XMLHttpRequest\"\\n}', 'params': '', 'body': 'hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&type=list&a=add&id=abc', 'expected_status': '200', 'expected_content': '[]', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[5 - 列表模块-创建列表接口-参数校验-创建播放列表的隐私没有选择私人的或者公开的但是仍然能创建且列表是公开的]",
+        "uid" : "2413d9b3e332809e",
+        "parentUid" : "d30e7786c9b1a0df5fef432d1bd63825",
+        "status" : "passed",
+        "time" : {
+          "start" : 1764925719507,
+          "stop" : 1764925720406,
+          "duration" : 899
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '5', 'case_name': '列表模块-创建列表接口-参数校验-创建播放列表的隐私没有选择私人的或者公开的但是仍然能创建且列表是公开的', 'method': 'POST', 'url': '/aj/lists?type=list&a=new', 'headers': '{\\n  \"Accept\": \"application/json, text/javascript, */*; q=0.01\",\\n  \"Accept-Encoding\": \"gzip, deflate\",\\n  \"Accept-Language\": \"zh-CN,zh;q=0.9\",\\n  \"Content-Length\": \"98\",\\n  \"Content-Type\": \"application/x-www-form-urlencoded; charset=UTF-8\",\\n  \"Cookie\": \"mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; PHPSESSID=sqr9mmvquakk4u9v2ovddjjjcj; r=c3RyaW5n; Hm_lvt_777b72b6411a140ccea21069556babac=1764034490,1764308798,1764558449,1764756516; HMACCOUNT=57B056F1CFF19C07; auto=; last_ads_seen=1764863384; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764984301%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; Hm_lpvt_777b72b6411a140ccea21069556babac=1764898973\",\\n  \"Host\": \"www.ixigua.net\",\\n  \"Origin\": \"http://www.ixigua.net\",\\n  \"Proxy-Connection\": \"keep-alive\",\\n  \"Referer\": \"http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html\",\\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\",\\n  \"X-Requested-With\": \"XMLHttpRequest\"\\n}', 'params': '', 'body': 'hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&name=抓包视频-pr错误&desc=&pr=999', 'expected_status': '200', 'expected_content': '{\\n    \"status\": 200\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[2 - 列表模块-创建列表接口-异常-重复列表名称仍返回成功创建列表]",
+        "uid" : "d4c392e27733d1e0",
+        "parentUid" : "d30e7786c9b1a0df5fef432d1bd63825",
+        "status" : "passed",
+        "time" : {
+          "start" : 1764925717438,
+          "stop" : 1764925717641,
+          "duration" : 203
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '2', 'case_name': '列表模块-创建列表接口-异常-重复列表名称仍返回成功创建列表', 'method': 'POST', 'url': '/aj/lists?type=list&a=new', 'headers': '{\\n  \"Accept\": \"application/json, text/javascript, */*; q=0.01\",\\n  \"Accept-Encoding\": \"gzip, deflate\",\\n  \"Accept-Language\": \"zh-CN,zh;q=0.9\",\\n  \"Content-Length\": \"98\",\\n  \"Content-Type\": \"application/x-www-form-urlencoded; charset=UTF-8\",\\n  \"Cookie\": \"mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; PHPSESSID=sqr9mmvquakk4u9v2ovddjjjcj; r=c3RyaW5n; Hm_lvt_777b72b6411a140ccea21069556babac=1764034490,1764308798,1764558449,1764756516; HMACCOUNT=57B056F1CFF19C07; auto=; last_ads_seen=1764863384; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764984301%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; Hm_lpvt_777b72b6411a140ccea21069556babac=1764898973\",\\n  \"Host\": \"www.ixigua.net\",\\n  \"Origin\": \"http://www.ixigua.net\",\\n  \"Proxy-Connection\": \"keep-alive\",\\n  \"Referer\": \"http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html\",\\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\",\\n  \"X-Requested-With\": \"XMLHttpRequest\"\\n}', 'params': '', 'body': 'hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&name=抓包视频重复&desc=&pr=1', 'expected_status': '200', 'expected_content': '{\\n    \"status\": 200\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      }, {
+        "name" : "test_api_case[1 - 列表模块-创建列表接口-正向-合法参数成功创建视频播放列表]",
+        "uid" : "ba7b75eff8ecf74e",
+        "parentUid" : "d30e7786c9b1a0df5fef432d1bd63825",
+        "status" : "passed",
+        "time" : {
+          "start" : 1764925716652,
+          "stop" : 1764925717425,
+          "duration" : 773
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'case_id': '1', 'case_name': '列表模块-创建列表接口-正向-合法参数成功创建视频播放列表', 'method': 'POST', 'url': '/aj/lists?type=list&a=new', 'headers': '{\\n  \"Accept\": \"application/json, text/javascript, */*; q=0.01\",\\n  \"Accept-Encoding\": \"gzip, deflate\",\\n  \"Accept-Language\": \"zh-CN,zh;q=0.9\",\\n  \"Content-Length\": \"98\",\\n  \"Content-Type\": \"application/x-www-form-urlencoded; charset=UTF-8\",\\n  \"Cookie\": \"mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; PHPSESSID=sqr9mmvquakk4u9v2ovddjjjcj; r=c3RyaW5n; Hm_lvt_777b72b6411a140ccea21069556babac=1764034490,1764308798,1764558449,1764756516; HMACCOUNT=57B056F1CFF19C07; auto=; last_ads_seen=1764863384; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764984301%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; Hm_lpvt_777b72b6411a140ccea21069556babac=1764898973\",\\n  \"Host\": \"www.ixigua.net\",\\n  \"Origin\": \"http://www.ixigua.net\",\\n  \"Proxy-Connection\": \"keep-alive\",\\n  \"Referer\": \"http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html\",\\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\",\\n  \"X-Requested-With\": \"XMLHttpRequest\"\\n}', 'params': '', 'body': 'hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&name=抓包视频&desc=&pr=1', 'expected_status': '200', 'expected_content': '{\\n    \"status\": 200\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+      } ],
+      "uid" : "d30e7786c9b1a0df5fef432d1bd63825"
+    } ],
+    "uid" : "64c3aaf2f8066f7ed0c6201dc350f976"
+  } ]
+}

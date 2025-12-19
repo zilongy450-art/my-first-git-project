@@ -1,0 +1,1 @@
+curl -X POST --data-raw '{"username": "test", "name": "张三", "phone": "13800138000", "province": "广东省", "city": "深圳市", "district": "南山区", "is_default": 1}' -H 'Authorization: Bearer 4AB527C4318B39FB74B4BA1ABBCC226B' -H 'Content-Type: application/json' http://192.168.31.130:6666/api/address/add

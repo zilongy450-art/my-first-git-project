@@ -1,0 +1,201 @@
+[ {
+  "uid" : "adcb9205fdf10abf",
+  "name" : "test_api_case[6 - 地址模块-删除地址接口-正向-传入存在的address_id删除成功]",
+  "time" : {
+    "start" : 1765333285981,
+    "stop" : 1765333286115,
+    "duration" : 134
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f8a7d03a51529432",
+  "name" : "test_api_case[10 - 地址模块-更新地址接口-正向-传入合法address_id修改姓名和手机号成功]",
+  "time" : {
+    "start" : 1765333286478,
+    "stop" : 1765333286659,
+    "duration" : 181
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b6d2c5b0554af5e4",
+  "name" : "test_api_case[14 - 地址模块-查询地址列表接口-正向-用户存在多条地址返回完整地址列表]",
+  "time" : {
+    "start" : 1765333286958,
+    "stop" : 1765333287314,
+    "duration" : 356
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d312855a70ef7049",
+  "name" : "test_api_case[7 - 地址模块-删除地址接口-异常-传入不存在的address_id返回地址不存在或无权限删除]",
+  "time" : {
+    "start" : 1765333286132,
+    "stop" : 1765333286296,
+    "duration" : 164
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a37fd7c9ff16c5dc",
+  "name" : "test_api_case[17 - 地址模块-查询地址列表接口-参数校验-缺少username字段返回缺少用户名]",
+  "time" : {
+    "start" : 1765333287455,
+    "stop" : 1765333287502,
+    "duration" : 47
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a6ad25a1f96d52d",
+  "name" : "test_api_case[13 - 地址模块-更新地址接口-异常-传入不存在的address_id按设计返回地址不存在或无权限操作]",
+  "time" : {
+    "start" : 1765333286899,
+    "stop" : 1765333286950,
+    "duration" : 51
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c783a289934ab167",
+  "name" : "test_api_case[4 - 地址模块-添加地址接口-参数校验-缺少详细地址返回缺少必要参数]",
+  "time" : {
+    "start" : 1765333285705,
+    "stop" : 1765333285821,
+    "duration" : 116
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1b1c0a501e0a2ca6",
+  "name" : "test_api_case[16 - 地址模块-查询地址列表接口-参数校验-username为空返回缺少用户名]",
+  "time" : {
+    "start" : 1765333287394,
+    "stop" : 1765333287444,
+    "duration" : 50
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9bff33944b97eddf",
+  "name" : "test_api_case[19 - 地址模块-设置默认地址接口-异常-传入不存在的address_id返回地址不存在或无权限操作]",
+  "time" : {
+    "start" : 1765333287621,
+    "stop" : 1765333287686,
+    "duration" : 65
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1702da568b911bd5",
+  "name" : "test_api_case[9 - 地址模块-删除地址接口-参数校验-缺少address_id按应返回参数错误]",
+  "time" : {
+    "start" : 1765333286387,
+    "stop" : 1765333286457,
+    "duration" : 70
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "efa924704618056d",
+  "name" : "test_api_case[8 - 地址模块-删除地址接口-异常-username为空]",
+  "time" : {
+    "start" : 1765333286306,
+    "stop" : 1765333286362,
+    "duration" : 56
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "473d838c05bf3422",
+  "name" : "test_api_case[15 - 地址模块-查询地址列表接口-参数校验-username错误返回验证失败]",
+  "time" : {
+    "start" : 1765333287326,
+    "stop" : 1765333287384,
+    "duration" : 58
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6849daf95de2835f",
+  "name" : "test_api_case[11 - 地址模块-更新地址接口-正向-缺少phone应返回更新成功]",
+  "time" : {
+    "start" : 1765333286667,
+    "stop" : 1765333286760,
+    "duration" : 93
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "65448cca5953dba3",
+  "name" : "test_api_case[20 - 地址模块-设置默认地址接口-参数校验-缺少address_id返回参数错误]",
+  "time" : {
+    "start" : 1765333287696,
+    "stop" : 1765333287745,
+    "duration" : 49
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a9fc2ca8f8fb17de",
+  "name" : "test_api_case[12 - 地址模块-更新地址接口-参数校验-缺少address_id返回缺少地址ID]",
+  "time" : {
+    "start" : 1765333286772,
+    "stop" : 1765333286890,
+    "duration" : 118
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b122a25cfca8f1bd",
+  "name" : "test_api_case[2 - 地址模块-添加地址接口-参数校验-缺少收货人姓名返回缺少必要参数]",
+  "time" : {
+    "start" : 1765333285535,
+    "stop" : 1765333285616,
+    "duration" : 81
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "64208a4c98ae9be7",
+  "name" : "test_api_case[5 - 地址模块-添加地址接口-正向-设置is_default为0]",
+  "time" : {
+    "start" : 1765333285835,
+    "stop" : 1765333285968,
+    "duration" : 133
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2a793659cad307bf",
+  "name" : "test_api_case[3 - 地址模块-添加地址接口-参数校验-缺少手机号返回缺少必要参数]",
+  "time" : {
+    "start" : 1765333285627,
+    "stop" : 1765333285696,
+    "duration" : 69
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "29ce0d8da3c3317c",
+  "name" : "test_api_case[18 - 地址模块-设置默认地址接口-正向-传入存在的address_id设置默认地址成功且唯一]",
+  "time" : {
+    "start" : 1765333287511,
+    "stop" : 1765333287612,
+    "duration" : 101
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c760bce775bbe118",
+  "name" : "test_api_case[1 - 地址模块-添加地址接口-正向-传入完整合法参数返回地址添加成功]",
+  "time" : {
+    "start" : 1765333285364,
+    "stop" : 1765333285525,
+    "duration" : 161
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

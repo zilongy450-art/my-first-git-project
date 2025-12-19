@@ -1,0 +1,231 @@
+{
+  "uid" : "12300f18893678a8",
+  "name" : "test_api_case[3 - 列表模块-创建列表接口-边界值-列表名称长度等于30字（上限）成功创建列表]",
+  "fullName" : "testcases.test_api_excel_driver.TestAllDrivers#test_api_case",
+  "historyId" : "e2de92a214e81c5f0d35891b49d51975",
+  "time" : {
+    "start" : 1764925717652,
+    "stop" : 1764925718493,
+    "duration" : 841
+  },
+  "description" : "\n        利用执行器执行用例\n\n        Args:\n            case (dict): 测试用例数据\n            request_handler: 请求处理器fixture\n        ",
+  "descriptionHtml" : "<pre><code>    利用执行器执行用例\n\n    Args:\n        case (dict): 测试用例数据\n        request_handler: 请求处理器fixture\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "request_handler",
+    "time" : {
+      "start" : 1764925716649,
+      "stop" : 1764925716651,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "data_handler",
+    "time" : {
+      "start" : 1764925716651,
+      "stop" : 1764925716651,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_xunit_setup_method_fixture_TestAllDrivers",
+    "time" : {
+      "start" : 1764925717651,
+      "stop" : 1764925717651,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "clear_data_handler",
+    "time" : {
+      "start" : 1764925717651,
+      "stop" : 1764925717651,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "\n        利用执行器执行用例\n\n        Args:\n            case (dict): 测试用例数据\n            request_handler: 请求处理器fixture\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "执行用例: 3 - 列表模块-创建列表接口-边界值-列表名称长度等于30字（上限）成功创建列表",
+      "time" : {
+        "start" : 1764925717652,
+        "stop" : 1764925718493,
+        "duration" : 841
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "682de0a912d5eab0",
+        "name" : "Curl命令",
+        "source" : "682de0a912d5eab0.txt",
+        "type" : "text/plain",
+        "size" : 1481
+      }, {
+        "uid" : "11c738d369304ff9",
+        "name" : "请求URL",
+        "source" : "11c738d369304ff9.txt",
+        "type" : "text/plain",
+        "size" : 46
+      }, {
+        "uid" : "f8aaafcd73ac3e11",
+        "name" : "请求头",
+        "source" : "f8aaafcd73ac3e11.json",
+        "type" : "application/json",
+        "size" : 1340
+      }, {
+        "uid" : "2d8baa243d9e5196",
+        "name" : "请求JSON数据",
+        "source" : "2d8baa243d9e5196.json",
+        "type" : "application/json",
+        "size" : 94
+      }, {
+        "uid" : "886edd725fe5f587",
+        "name" : "响应状态码",
+        "source" : "886edd725fe5f587.txt",
+        "type" : "text/plain",
+        "size" : 3
+      }, {
+        "uid" : "105500e318e0b890",
+        "name" : "响应头",
+        "source" : "105500e318e0b890.json",
+        "type" : "application/json",
+        "size" : 420
+      }, {
+        "uid" : "ca9a2f3127689efd",
+        "name" : "响应体",
+        "source" : "ca9a2f3127689efd.txt",
+        "type" : "text/plain",
+        "size" : 14
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 7,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "b2c8a9daa4f3f605",
+      "name" : "log",
+      "source" : "b2c8a9daa4f3f605.txt",
+      "type" : "text/plain",
+      "size" : 5250
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 8,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestAllDrivers::0",
+    "time" : {
+      "start" : 1764925718494,
+      "stop" : 1764925718495,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "clear_data_handler::0",
+    "time" : {
+      "start" : 1764925718498,
+      "stop" : 1764925718498,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Excel测试用例执行"
+  }, {
+    "name" : "feature",
+    "value" : "API接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_api_excel_driver"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAllDrivers"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-A7LNAG5"
+  }, {
+    "name" : "thread",
+    "value" : "15684-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_api_excel_driver"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'case_id': '3', 'case_name': '列表模块-创建列表接口-边界值-列表名称长度等于30字（上限）成功创建列表', 'method': 'POST', 'url': '/aj/lists?type=list&a=new', 'headers': '{\\n  \"Accept\": \"application/json, text/javascript, */*; q=0.01\",\\n  \"Accept-Encoding\": \"gzip, deflate\",\\n  \"Accept-Language\": \"zh-CN,zh;q=0.9\",\\n  \"Content-Length\": \"98\",\\n  \"Content-Type\": \"application/x-www-form-urlencoded; charset=UTF-8\",\\n  \"Cookie\": \"mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; PHPSESSID=sqr9mmvquakk4u9v2ovddjjjcj; r=c3RyaW5n; Hm_lvt_777b72b6411a140ccea21069556babac=1764034490,1764308798,1764558449,1764756516; HMACCOUNT=57B056F1CFF19C07; auto=; last_ads_seen=1764863384; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764984301%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; Hm_lpvt_777b72b6411a140ccea21069556babac=1764898973\",\\n  \"Host\": \"www.ixigua.net\",\\n  \"Origin\": \"http://www.ixigua.net\",\\n  \"Proxy-Connection\": \"keep-alive\",\\n  \"Referer\": \"http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html\",\\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\",\\n  \"X-Requested-With\": \"XMLHttpRequest\"\\n}', 'params': '', 'body': 'hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&name=123456789012345678901234567890&desc=&pr=1', 'expected_status': '200', 'expected_content': '{\\n    \"status\": 200\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "12300f18893678a8.json",
+  "parameterValues" : [ "{'case_id': '3', 'case_name': '列表模块-创建列表接口-边界值-列表名称长度等于30字（上限）成功创建列表', 'method': 'POST', 'url': '/aj/lists?type=list&a=new', 'headers': '{\\n  \"Accept\": \"application/json, text/javascript, */*; q=0.01\",\\n  \"Accept-Encoding\": \"gzip, deflate\",\\n  \"Accept-Language\": \"zh-CN,zh;q=0.9\",\\n  \"Content-Length\": \"98\",\\n  \"Content-Type\": \"application/x-www-form-urlencoded; charset=UTF-8\",\\n  \"Cookie\": \"mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; PHPSESSID=sqr9mmvquakk4u9v2ovddjjjcj; r=c3RyaW5n; Hm_lvt_777b72b6411a140ccea21069556babac=1764034490,1764308798,1764558449,1764756516; HMACCOUNT=57B056F1CFF19C07; auto=; last_ads_seen=1764863384; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764984301%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; Hm_lpvt_777b72b6411a140ccea21069556babac=1764898973\",\\n  \"Host\": \"www.ixigua.net\",\\n  \"Origin\": \"http://www.ixigua.net\",\\n  \"Proxy-Connection\": \"keep-alive\",\\n  \"Referer\": \"http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html\",\\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\",\\n  \"X-Requested-With\": \"XMLHttpRequest\"\\n}', 'params': '', 'body': 'hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&name=123456789012345678901234567890&desc=&pr=1', 'expected_status': '200', 'expected_content': '{\\n    \"status\": 200\\n}', 'json_path': '', 'expected_json_value': '', 'extract_key': '', 'save_var_name': '', 'validate': ''}" ]
+}

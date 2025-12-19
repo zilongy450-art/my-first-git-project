@@ -1,0 +1,1 @@
+curl -X POST --data-raw '{}' -H 'Authorization: Bearer 4AB527C4318B39FB74B4BA1ABBCC226B' -H 'Content-Type: application/json' http://192.168.31.130:6666/api/address/list

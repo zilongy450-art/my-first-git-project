@@ -1,0 +1,141 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Dec 10 10:21:26 CST 2025","Wed Dec 10 10:21:26 CST 2025","93","testcases","test_api_excel_driver","TestAllDrivers","","","test_api_case[11 - 地址模块-更新地址接口-正向-缺少phone应返回更新成功]","
+        利用执行器执行用例
+
+        Args:
+            case (dict): 测试用例数据
+            request_handler: 请求处理器fixture
+        "
+"passed","Wed Dec 10 10:21:26 CST 2025","Wed Dec 10 10:21:26 CST 2025","70","testcases","test_api_excel_driver","TestAllDrivers","","","test_api_case[9 - 地址模块-删除地址接口-参数校验-缺少address_id按应返回参数错误]","
+        利用执行器执行用例
+
+        Args:
+            case (dict): 测试用例数据
+            request_handler: 请求处理器fixture
+        "
+"passed","Wed Dec 10 10:21:27 CST 2025","Wed Dec 10 10:21:27 CST 2025","49","testcases","test_api_excel_driver","TestAllDrivers","","","test_api_case[20 - 地址模块-设置默认地址接口-参数校验-缺少address_id返回参数错误]","
+        利用执行器执行用例
+
+        Args:
+            case (dict): 测试用例数据
+            request_handler: 请求处理器fixture
+        "
+"passed","Wed Dec 10 10:21:27 CST 2025","Wed Dec 10 10:21:27 CST 2025","47","testcases","test_api_excel_driver","TestAllDrivers","","","test_api_case[17 - 地址模块-查询地址列表接口-参数校验-缺少username字段返回缺少用户名]","
+        利用执行器执行用例
+
+        Args:
+            case (dict): 测试用例数据
+            request_handler: 请求处理器fixture
+        "
+"passed","Wed Dec 10 10:21:27 CST 2025","Wed Dec 10 10:21:27 CST 2025","58","testcases","test_api_excel_driver","TestAllDrivers","","","test_api_case[15 - 地址模块-查询地址列表接口-参数校验-username错误返回验证失败]","
+        利用执行器执行用例
+
+        Args:
+            case (dict): 测试用例数据
+            request_handler: 请求处理器fixture
+        "
+"passed","Wed Dec 10 10:21:27 CST 2025","Wed Dec 10 10:21:27 CST 2025","65","testcases","test_api_excel_driver","TestAllDrivers","","","test_api_case[19 - 地址模块-设置默认地址接口-异常-传入不存在的address_id返回地址不存在或无权限操作]","
+        利用执行器执行用例
+
+        Args:
+            case (dict): 测试用例数据
+            request_handler: 请求处理器fixture
+        "
+"passed","Wed Dec 10 10:21:25 CST 2025","Wed Dec 10 10:21:25 CST 2025","116","testcases","test_api_excel_driver","TestAllDrivers","","","test_api_case[4 - 地址模块-添加地址接口-参数校验-缺少详细地址返回缺少必要参数]","
+        利用执行器执行用例
+
+        Args:
+            case (dict): 测试用例数据
+            request_handler: 请求处理器fixture
+        "
+"passed","Wed Dec 10 10:21:26 CST 2025","Wed Dec 10 10:21:26 CST 2025","56","testcases","test_api_excel_driver","TestAllDrivers","","","test_api_case[8 - 地址模块-删除地址接口-异常-username为空]","
+        利用执行器执行用例
+
+        Args:
+            case (dict): 测试用例数据
+            request_handler: 请求处理器fixture
+        "
+"passed","Wed Dec 10 10:21:27 CST 2025","Wed Dec 10 10:21:27 CST 2025","50","testcases","test_api_excel_driver","TestAllDrivers","","","test_api_case[16 - 地址模块-查询地址列表接口-参数校验-username为空返回缺少用户名]","
+        利用执行器执行用例
+
+        Args:
+            case (dict): 测试用例数据
+            request_handler: 请求处理器fixture
+        "
+"passed","Wed Dec 10 10:21:25 CST 2025","Wed Dec 10 10:21:25 CST 2025","161","testcases","test_api_excel_driver","TestAllDrivers","","","test_api_case[1 - 地址模块-添加地址接口-正向-传入完整合法参数返回地址添加成功]","
+        利用执行器执行用例
+
+        Args:
+            case (dict): 测试用例数据
+            request_handler: 请求处理器fixture
+        "
+"passed","Wed Dec 10 10:21:26 CST 2025","Wed Dec 10 10:21:26 CST 2025","51","testcases","test_api_excel_driver","TestAllDrivers","","","test_api_case[13 - 地址模块-更新地址接口-异常-传入不存在的address_id按设计返回地址不存在或无权限操作]","
+        利用执行器执行用例
+
+        Args:
+            case (dict): 测试用例数据
+            request_handler: 请求处理器fixture
+        "
+"passed","Wed Dec 10 10:21:26 CST 2025","Wed Dec 10 10:21:26 CST 2025","181","testcases","test_api_excel_driver","TestAllDrivers","","","test_api_case[10 - 地址模块-更新地址接口-正向-传入合法address_id修改姓名和手机号成功]","
+        利用执行器执行用例
+
+        Args:
+            case (dict): 测试用例数据
+            request_handler: 请求处理器fixture
+        "
+"passed","Wed Dec 10 10:21:26 CST 2025","Wed Dec 10 10:21:26 CST 2025","164","testcases","test_api_excel_driver","TestAllDrivers","","","test_api_case[7 - 地址模块-删除地址接口-异常-传入不存在的address_id返回地址不存在或无权限删除]","
+        利用执行器执行用例
+
+        Args:
+            case (dict): 测试用例数据
+            request_handler: 请求处理器fixture
+        "
+"passed","Wed Dec 10 10:21:25 CST 2025","Wed Dec 10 10:21:26 CST 2025","134","testcases","test_api_excel_driver","TestAllDrivers","","","test_api_case[6 - 地址模块-删除地址接口-正向-传入存在的address_id删除成功]","
+        利用执行器执行用例
+
+        Args:
+            case (dict): 测试用例数据
+            request_handler: 请求处理器fixture
+        "
+"passed","Wed Dec 10 10:21:26 CST 2025","Wed Dec 10 10:21:27 CST 2025","356","testcases","test_api_excel_driver","TestAllDrivers","","","test_api_case[14 - 地址模块-查询地址列表接口-正向-用户存在多条地址返回完整地址列表]","
+        利用执行器执行用例
+
+        Args:
+            case (dict): 测试用例数据
+            request_handler: 请求处理器fixture
+        "
+"passed","Wed Dec 10 10:21:25 CST 2025","Wed Dec 10 10:21:25 CST 2025","133","testcases","test_api_excel_driver","TestAllDrivers","","","test_api_case[5 - 地址模块-添加地址接口-正向-设置is_default为0]","
+        利用执行器执行用例
+
+        Args:
+            case (dict): 测试用例数据
+            request_handler: 请求处理器fixture
+        "
+"passed","Wed Dec 10 10:21:26 CST 2025","Wed Dec 10 10:21:26 CST 2025","118","testcases","test_api_excel_driver","TestAllDrivers","","","test_api_case[12 - 地址模块-更新地址接口-参数校验-缺少address_id返回缺少地址ID]","
+        利用执行器执行用例
+
+        Args:
+            case (dict): 测试用例数据
+            request_handler: 请求处理器fixture
+        "
+"passed","Wed Dec 10 10:21:25 CST 2025","Wed Dec 10 10:21:25 CST 2025","69","testcases","test_api_excel_driver","TestAllDrivers","","","test_api_case[3 - 地址模块-添加地址接口-参数校验-缺少手机号返回缺少必要参数]","
+        利用执行器执行用例
+
+        Args:
+            case (dict): 测试用例数据
+            request_handler: 请求处理器fixture
+        "
+"passed","Wed Dec 10 10:21:27 CST 2025","Wed Dec 10 10:21:27 CST 2025","101","testcases","test_api_excel_driver","TestAllDrivers","","","test_api_case[18 - 地址模块-设置默认地址接口-正向-传入存在的address_id设置默认地址成功且唯一]","
+        利用执行器执行用例
+
+        Args:
+            case (dict): 测试用例数据
+            request_handler: 请求处理器fixture
+        "
+"passed","Wed Dec 10 10:21:25 CST 2025","Wed Dec 10 10:21:25 CST 2025","81","testcases","test_api_excel_driver","TestAllDrivers","","","test_api_case[2 - 地址模块-添加地址接口-参数校验-缺少收货人姓名返回缺少必要参数]","
+        利用执行器执行用例
+
+        Args:
+            case (dict): 测试用例数据
+            request_handler: 请求处理器fixture
+        "

@@ -1,0 +1,1992 @@
+{
+	"info": {
+		"_postman_id": "3eb634cc-99cf-4d5d-ad2f-297f8bceea40",
+		"name": "xigua",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50038169",
+		"_collection_link": "https://speeding-crater-1223989.postman.co/workspace/yzl's-Workspace~a9d4572f-24c3-4163-82c9-4ad798a942f0/collection/50038169-3eb634cc-99cf-4d5d-ad2f-297f8bceea40?action=share&source=collection_link&creator=50038169"
+	},
+	"item": [
+		{
+			"name": "创建成功",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"HTTP 状态码为 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"响应 JSON 中 status 字段为 200\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/javascript, */*; q=0.01"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "Origin",
+						"value": "http://www.ixigua.net"
+					},
+					{
+						"key": "Referer",
+						"value": "http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hash",
+							"value": "{{hash}}",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "抓包视频",
+							"type": "text"
+						},
+						{
+							"key": "pr",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ixigua.net/aj/lists?type=list&a=new",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ixigua",
+						"net"
+					],
+					"path": [
+						"aj",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "list"
+						},
+						{
+							"key": "a",
+							"value": "new"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'http://www.ixigua.net/aj/lists?type=list&a=new' \\\r\n  -H 'Accept: application/json, text/javascript, */*; q=0.01' \\\r\n  -H 'Accept-Language: zh-CN,zh;q=0.9' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \\\r\n  -b 'mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; r=c3RyaW5n; auto=; PHPSESSID=9n3qk80cn502rhogdd8h61qq6b; Hm_lvt_777b72b6411a140ccea21069556babac=1763627359,1763705762,1763952967,1764034490; HMACCOUNT=57B056F1CFF19C07; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764303709%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; last_ads_seen=1764242879; Hm_lpvt_777b72b6411a140ccea21069556babac=1764243086' \\\r\n  -H 'Origin: http://www.ixigua.net' \\\r\n  -H 'Referer: http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  --data-raw 'hash=5b8ea999e9774c1b8e6c3a285c6a92b99a04663e&name=%E6%8A%93%E5%8C%85%E8%A7%86%E9%A2%91&desc=&pr=1' \\\r\n  --insecure"
+			},
+			"response": []
+		},
+		{
+			"name": "创建成功-名字相同",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"HTTP 状态码为 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"响应 JSON 中 status 字段为 200\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/javascript, */*; q=0.01"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "Origin",
+						"value": "http://www.ixigua.net"
+					},
+					{
+						"key": "Referer",
+						"value": "http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hash",
+							"value": "{{hash}}",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "抓包视频-重复",
+							"type": "text"
+						},
+						{
+							"key": "pr",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ixigua.net/aj/lists?type=list&a=new",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ixigua",
+						"net"
+					],
+					"path": [
+						"aj",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "list"
+						},
+						{
+							"key": "a",
+							"value": "new"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'http://www.ixigua.net/aj/lists?type=list&a=new' \\\r\n  -H 'Accept: application/json, text/javascript, */*; q=0.01' \\\r\n  -H 'Accept-Language: zh-CN,zh;q=0.9' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \\\r\n  -b 'mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; r=c3RyaW5n; auto=; PHPSESSID=9n3qk80cn502rhogdd8h61qq6b; Hm_lvt_777b72b6411a140ccea21069556babac=1763627359,1763705762,1763952967,1764034490; HMACCOUNT=57B056F1CFF19C07; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764303709%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; last_ads_seen=1764242879; Hm_lpvt_777b72b6411a140ccea21069556babac=1764243086' \\\r\n  -H 'Origin: http://www.ixigua.net' \\\r\n  -H 'Referer: http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  --data-raw 'hash=5b8ea999e9774c1b8e6c3a285c6a92b99a04663e&name=%E6%8A%93%E5%8C%85%E8%A7%86%E9%A2%91&desc=&pr=1' \\\r\n  --insecure"
+			},
+			"response": []
+		},
+		{
+			"name": "创建成功-名字长度为30",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"HTTP 状态码为 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"响应 JSON 中 status 字段为 200\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/javascript, */*; q=0.01"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "Origin",
+						"value": "http://www.ixigua.net"
+					},
+					{
+						"key": "Referer",
+						"value": "http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hash",
+							"value": "{{hash}}",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "123456789012345678901234567890",
+							"type": "text"
+						},
+						{
+							"key": "pr",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ixigua.net/aj/lists?type=list&a=new",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ixigua",
+						"net"
+					],
+					"path": [
+						"aj",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "list"
+						},
+						{
+							"key": "a",
+							"value": "new"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'http://www.ixigua.net/aj/lists?type=list&a=new' \\\r\n  -H 'Accept: application/json, text/javascript, */*; q=0.01' \\\r\n  -H 'Accept-Language: zh-CN,zh;q=0.9' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \\\r\n  -b 'mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; r=c3RyaW5n; auto=; PHPSESSID=9n3qk80cn502rhogdd8h61qq6b; Hm_lvt_777b72b6411a140ccea21069556babac=1763627359,1763705762,1763952967,1764034490; HMACCOUNT=57B056F1CFF19C07; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764303709%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; last_ads_seen=1764242879; Hm_lpvt_777b72b6411a140ccea21069556babac=1764243086' \\\r\n  -H 'Origin: http://www.ixigua.net' \\\r\n  -H 'Referer: http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  --data-raw 'hash=5b8ea999e9774c1b8e6c3a285c6a92b99a04663e&name=%E6%8A%93%E5%8C%85%E8%A7%86%E9%A2%91&desc=&pr=1' \\\r\n  --insecure"
+			},
+			"response": []
+		},
+		{
+			"name": "创建失败-名字长度为0",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"HTTP 状态码为 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"响应 JSON 中 status 字段为 400\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(400);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/javascript, */*; q=0.01"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "Origin",
+						"value": "http://www.ixigua.net"
+					},
+					{
+						"key": "Referer",
+						"value": "http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hash",
+							"value": "{{hash}}",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "pr",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ixigua.net/aj/lists?type=list&a=new",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ixigua",
+						"net"
+					],
+					"path": [
+						"aj",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "list"
+						},
+						{
+							"key": "a",
+							"value": "new"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'http://www.ixigua.net/aj/lists?type=list&a=new' \\\r\n  -H 'Accept: application/json, text/javascript, */*; q=0.01' \\\r\n  -H 'Accept-Language: zh-CN,zh;q=0.9' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \\\r\n  -b 'mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; r=c3RyaW5n; auto=; PHPSESSID=9n3qk80cn502rhogdd8h61qq6b; Hm_lvt_777b72b6411a140ccea21069556babac=1763627359,1763705762,1763952967,1764034490; HMACCOUNT=57B056F1CFF19C07; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764303709%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; last_ads_seen=1764242879; Hm_lpvt_777b72b6411a140ccea21069556babac=1764243086' \\\r\n  -H 'Origin: http://www.ixigua.net' \\\r\n  -H 'Referer: http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  --data-raw 'hash=5b8ea999e9774c1b8e6c3a285c6a92b99a04663e&name=%E6%8A%93%E5%8C%85%E8%A7%86%E9%A2%91&desc=&pr=1' \\\r\n  --insecure"
+			},
+			"response": []
+		},
+		{
+			"name": "创建成功-隐私设置错误",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"HTTP 状态码为 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"响应 JSON 中 status 字段为 200\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/javascript, */*; q=0.01"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "Origin",
+						"value": "http://www.ixigua.net"
+					},
+					{
+						"key": "Referer",
+						"value": "http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hash",
+							"value": "{{hash}}",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "抓包视频-pr错误",
+							"type": "text"
+						},
+						{
+							"key": "pr",
+							"value": "999",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ixigua.net/aj/lists?type=list&a=new",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ixigua",
+						"net"
+					],
+					"path": [
+						"aj",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "list"
+						},
+						{
+							"key": "a",
+							"value": "new"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'http://www.ixigua.net/aj/lists?type=list&a=new' \\\r\n  -H 'Accept: application/json, text/javascript, */*; q=0.01' \\\r\n  -H 'Accept-Language: zh-CN,zh;q=0.9' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \\\r\n  -b 'mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; r=c3RyaW5n; auto=; PHPSESSID=9n3qk80cn502rhogdd8h61qq6b; Hm_lvt_777b72b6411a140ccea21069556babac=1763627359,1763705762,1763952967,1764034490; HMACCOUNT=57B056F1CFF19C07; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764303709%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; last_ads_seen=1764242879; Hm_lpvt_777b72b6411a140ccea21069556babac=1764243086' \\\r\n  -H 'Origin: http://www.ixigua.net' \\\r\n  -H 'Referer: http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  --data-raw 'hash=5b8ea999e9774c1b8e6c3a285c6a92b99a04663e&name=%E6%8A%93%E5%8C%85%E8%A7%86%E9%A2%91&desc=&pr=1' \\\r\n  --insecure"
+			},
+			"response": []
+		},
+		{
+			"name": "创建失败-请求类型错误",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// 断言 HTTP 状态码为 200\r",
+							"pm.test(\"HTTP 状态码为 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// 断言 JSON 中 status = 400\r",
+							"pm.test(\"JSON 中 status 字段为 400\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(400);\r",
+							"});\r",
+							"\r",
+							"// 断言 JSON 中 message = 'bad-request'\r",
+							"pm.test(\"JSON 中 message 字段为 bad-request\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.message).to.eql(\"bad-request\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/javascript, */*; q=0.01"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "Origin",
+						"value": "http://www.ixigua.net"
+					},
+					{
+						"key": "Referer",
+						"value": "http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hash",
+							"value": "{{hash}}",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "抓包视频",
+							"type": "text"
+						},
+						{
+							"key": "pr",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ixigua.net/aj/lists?type=list&a=new",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ixigua",
+						"net"
+					],
+					"path": [
+						"aj",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "list"
+						},
+						{
+							"key": "a",
+							"value": "new"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'http://www.ixigua.net/aj/lists?type=list&a=new' \\\r\n  -H 'Accept: application/json, text/javascript, */*; q=0.01' \\\r\n  -H 'Accept-Language: zh-CN,zh;q=0.9' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \\\r\n  -b 'mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; r=c3RyaW5n; auto=; PHPSESSID=9n3qk80cn502rhogdd8h61qq6b; Hm_lvt_777b72b6411a140ccea21069556babac=1763627359,1763705762,1763952967,1764034490; HMACCOUNT=57B056F1CFF19C07; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764303709%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; last_ads_seen=1764242879; Hm_lpvt_777b72b6411a140ccea21069556babac=1764243086' \\\r\n  -H 'Origin: http://www.ixigua.net' \\\r\n  -H 'Referer: http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  --data-raw 'hash=5b8ea999e9774c1b8e6c3a285c6a92b99a04663e&name=%E6%8A%93%E5%8C%85%E8%A7%86%E9%A2%91&desc=&pr=1' \\\r\n  --insecure"
+			},
+			"response": []
+		},
+		{
+			"name": "创建成功-描述填写特殊字符",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"HTTP 状态码为 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"响应 JSON 中 status 字段为 200\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/javascript, */*; q=0.01"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "Origin",
+						"value": "http://www.ixigua.net"
+					},
+					{
+						"key": "Referer",
+						"value": "http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hash",
+							"value": "{{hash}}",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "抓包视频_desc",
+							"type": "text"
+						},
+						{
+							"key": "pr",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "这是测试描述！~@#￥%&*",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ixigua.net/aj/lists?type=list&a=new",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ixigua",
+						"net"
+					],
+					"path": [
+						"aj",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "list"
+						},
+						{
+							"key": "a",
+							"value": "new"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'http://www.ixigua.net/aj/lists?type=list&a=new' \\\r\n  -H 'Accept: application/json, text/javascript, */*; q=0.01' \\\r\n  -H 'Accept-Language: zh-CN,zh;q=0.9' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \\\r\n  -b 'mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; r=c3RyaW5n; auto=; PHPSESSID=9n3qk80cn502rhogdd8h61qq6b; Hm_lvt_777b72b6411a140ccea21069556babac=1763627359,1763705762,1763952967,1764034490; HMACCOUNT=57B056F1CFF19C07; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764303709%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; last_ads_seen=1764242879; Hm_lpvt_777b72b6411a140ccea21069556babac=1764243086' \\\r\n  -H 'Origin: http://www.ixigua.net' \\\r\n  -H 'Referer: http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  --data-raw 'hash=5b8ea999e9774c1b8e6c3a285c6a92b99a04663e&name=%E6%8A%93%E5%8C%85%E8%A7%86%E9%A2%91&desc=&pr=1' \\\r\n  --insecure"
+			},
+			"response": []
+		},
+		{
+			"name": "查询列表成功",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// 1. 解析响应 JSON\r",
+							"let json = pm.response.json();\r",
+							"let html = json.html || \"\";\r",
+							"\r",
+							"// 2. 用正则在 HTML 中找“第一个抓包视频”的 playlist-item 的 id\r",
+							"// <div class=\"playlist-item\" id=\"xxxx\"> …… 抓包视频 ……\r",
+							"let regex = /<div class=\"playlist-item\" id=\"([^\"]+)\">[\\s\\S]*?<span class=\"list-name \"[^>]*>\\s*抓包视频/;\r",
+							"\r",
+							"let match = html.match(regex);\r",
+							"\r",
+							"pm.test(\"能找到第一个名为【抓包视频】的播放列表\", function () {\r",
+							"    pm.expect(match, \"没有在html里找到抓包视频的列表\").to.not.be.null;\r",
+							"});\r",
+							"\r",
+							"// 3. 提取 list_id 并存到环境变量\r",
+							"if (match) {\r",
+							"    let listId = match[1];   // 正则第一个括号里的内容，就是 div 上的 id\r",
+							"    pm.environment.set(\"list_id\", listId);\r",
+							"    console.log(\"抓包视频的 list_id =\", listId);\r",
+							"}\r",
+							"\r",
+							"\r",
+							"// 断言 HTTP 状态码为 200\r",
+							"pm.test(\"HTTP 状态码为 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// 断言 JSON 中 status = 200\r",
+							"pm.test(\"JSON 中 status 字段为 200\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/javascript, */*; q=0.01"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hash",
+							"value": "{{hash}}",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "list",
+							"type": "text"
+						},
+						{
+							"key": "a",
+							"value": "add",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "464",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ixigua.net/aj/lists?hash={{hash}}&type=list&a=add&id=464",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ixigua",
+						"net"
+					],
+					"path": [
+						"aj",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "hash",
+							"value": "{{hash}}"
+						},
+						{
+							"key": "type",
+							"value": "list"
+						},
+						{
+							"key": "a",
+							"value": "add"
+						},
+						{
+							"key": "id",
+							"value": "464"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'http://www.ixigua.net/aj/lists?hash=5b8ea999e9774c1b8e6c3a285c6a92b99a04663e&type=list&a=add&id=464&_=1764243085262' \\\r\n  -H 'Accept: application/json, text/javascript, */*; q=0.01' \\\r\n  -H 'Accept-Language: zh-CN,zh;q=0.9' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -b 'mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; r=c3RyaW5n; auto=; PHPSESSID=9n3qk80cn502rhogdd8h61qq6b; Hm_lvt_777b72b6411a140ccea21069556babac=1763627359,1763705762,1763952967,1764034490; HMACCOUNT=57B056F1CFF19C07; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764303709%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; last_ads_seen=1764242879; Hm_lpvt_777b72b6411a140ccea21069556babac=1764243086' \\\r\n  -H 'Referer: http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  --insecure"
+			},
+			"response": []
+		},
+		{
+			"name": "查询列表失败-列表类型错误",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// 断言 HTTP 状态码为 200\r",
+							"pm.test(\"HTTP 状态码为 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// 断言 JSON 中 error = 404\r",
+							"pm.test(\"JSON 中 error 字段为 404\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.error).to.eql(404);\r",
+							"});\r",
+							"\r",
+							"// 断言 JSON 中 error_message = 'type not found'\r",
+							"pm.test(\"JSON 中 error_message 字段为 type not found\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.error_message).to.eql(\"type not found\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/javascript, */*; q=0.01"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hash",
+							"value": "{{hash}}",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "list",
+							"type": "text"
+						},
+						{
+							"key": "a",
+							"value": "add",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "464",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ixigua.net/aj/lists?hash={{hash}}&type=abc&a=add&id=464",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ixigua",
+						"net"
+					],
+					"path": [
+						"aj",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "hash",
+							"value": "{{hash}}"
+						},
+						{
+							"key": "type",
+							"value": "abc"
+						},
+						{
+							"key": "a",
+							"value": "add"
+						},
+						{
+							"key": "id",
+							"value": "464"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'http://www.ixigua.net/aj/lists?hash=5b8ea999e9774c1b8e6c3a285c6a92b99a04663e&type=list&a=add&id=464&_=1764243085262' \\\r\n  -H 'Accept: application/json, text/javascript, */*; q=0.01' \\\r\n  -H 'Accept-Language: zh-CN,zh;q=0.9' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -b 'mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; r=c3RyaW5n; auto=; PHPSESSID=9n3qk80cn502rhogdd8h61qq6b; Hm_lvt_777b72b6411a140ccea21069556babac=1763627359,1763705762,1763952967,1764034490; HMACCOUNT=57B056F1CFF19C07; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764303709%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; last_ads_seen=1764242879; Hm_lpvt_777b72b6411a140ccea21069556babac=1764243086' \\\r\n  -H 'Referer: http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  --insecure"
+			},
+			"response": []
+		},
+		{
+			"name": "查询列表失败-视频实际不存在",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"HTTP 状态码为 200 且返回空数组\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json).to.be.an('array').that.is.empty;\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/javascript, */*; q=0.01"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hash",
+							"value": "{{hash}}",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "list",
+							"type": "text"
+						},
+						{
+							"key": "a",
+							"value": "add",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "abc",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ixigua.net/aj/lists?hash={{hash}}&type=list&a=add&id=abc",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ixigua",
+						"net"
+					],
+					"path": [
+						"aj",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "hash",
+							"value": "{{hash}}"
+						},
+						{
+							"key": "type",
+							"value": "list"
+						},
+						{
+							"key": "a",
+							"value": "add"
+						},
+						{
+							"key": "id",
+							"value": "abc"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'http://www.ixigua.net/aj/lists?hash=5b8ea999e9774c1b8e6c3a285c6a92b99a04663e&type=list&a=add&id=464&_=1764243085262' \\\r\n  -H 'Accept: application/json, text/javascript, */*; q=0.01' \\\r\n  -H 'Accept-Language: zh-CN,zh;q=0.9' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -b 'mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; r=c3RyaW5n; auto=; PHPSESSID=9n3qk80cn502rhogdd8h61qq6b; Hm_lvt_777b72b6411a140ccea21069556babac=1763627359,1763705762,1763952967,1764034490; HMACCOUNT=57B056F1CFF19C07; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764303709%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; last_ads_seen=1764242879; Hm_lpvt_777b72b6411a140ccea21069556babac=1764243086' \\\r\n  -H 'Referer: http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  --insecure"
+			},
+			"response": []
+		},
+		{
+			"name": "查询列表失败-a的动作标识错误",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"HTTP 状态码为 200 且返回空数组\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json).to.be.an('array').that.is.empty;\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/javascript, */*; q=0.01"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hash",
+							"value": "{{hash}}",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "list",
+							"type": "text"
+						},
+						{
+							"key": "a",
+							"value": "abc",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "464",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ixigua.net/aj/lists?hash={{hash}}&type=list&a=abc&id=464",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ixigua",
+						"net"
+					],
+					"path": [
+						"aj",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "hash",
+							"value": "{{hash}}"
+						},
+						{
+							"key": "type",
+							"value": "list"
+						},
+						{
+							"key": "a",
+							"value": "abc"
+						},
+						{
+							"key": "id",
+							"value": "464"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'http://www.ixigua.net/aj/lists?hash=5b8ea999e9774c1b8e6c3a285c6a92b99a04663e&type=list&a=add&id=464&_=1764243085262' \\\r\n  -H 'Accept: application/json, text/javascript, */*; q=0.01' \\\r\n  -H 'Accept-Language: zh-CN,zh;q=0.9' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -b 'mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; r=c3RyaW5n; auto=; PHPSESSID=9n3qk80cn502rhogdd8h61qq6b; Hm_lvt_777b72b6411a140ccea21069556babac=1763627359,1763705762,1763952967,1764034490; HMACCOUNT=57B056F1CFF19C07; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764303709%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; last_ads_seen=1764242879; Hm_lpvt_777b72b6411a140ccea21069556babac=1764243086' \\\r\n  -H 'Referer: http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  --insecure"
+			},
+			"response": []
+		},
+		{
+			"name": "添加视频到播放列表成功",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"HTTP 状态码为 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON中的status字段为200\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.status).to.eql(200);\r",
+							"});\r",
+							"pm.test(\"JSON中的code字段为1\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.code).to.eql(1);\r",
+							"});\r",
+							"pm.test(\"JSON中的name字段为抓包视频\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/javascript, */*; q=0.01"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hash",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "a",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "list",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ixigua.net/aj/lists?hash={{hash}}&type=list&a=tg&id=464&list={{list_id}}",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ixigua",
+						"net"
+					],
+					"path": [
+						"aj",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "hash",
+							"value": "{{hash}}"
+						},
+						{
+							"key": "type",
+							"value": "list"
+						},
+						{
+							"key": "a",
+							"value": "tg"
+						},
+						{
+							"key": "id",
+							"value": "464"
+						},
+						{
+							"key": "list",
+							"value": "{{list_id}}"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'http://www.ixigua.net/aj/lists?hash=5b8ea999e9774c1b8e6c3a285c6a92b99a04663e&type=list&a=tg&id=464&list=bmo8vrEBM6QFBEe&_=1764243085599' \\\r\n  -H 'Accept: application/json, text/javascript, */*; q=0.01' \\\r\n  -H 'Accept-Language: zh-CN,zh;q=0.9' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -b 'mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; r=c3RyaW5n; auto=; PHPSESSID=9n3qk80cn502rhogdd8h61qq6b; Hm_lvt_777b72b6411a140ccea21069556babac=1763627359,1763705762,1763952967,1764034490; HMACCOUNT=57B056F1CFF19C07; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764303709%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; last_ads_seen=1764242879; Hm_lpvt_777b72b6411a140ccea21069556babac=1764243086' \\\r\n  -H 'Referer: http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  --insecure"
+			},
+			"response": []
+		},
+		{
+			"name": "移除视频-再次执行添加接口",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"HTTP 状态码为 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON中的status字段为200\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.status).to.eql(200);\r",
+							"});\r",
+							"pm.test(\"JSON中的code字段为0\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.code).to.eql(0);\r",
+							"});\r",
+							"pm.test(\"JSON中的name字段为抓包视频\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/javascript, */*; q=0.01"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hash",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "a",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "list",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ixigua.net/aj/lists?hash={{hash}}&type=list&a=tg&id=464&list={{list_id}}",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ixigua",
+						"net"
+					],
+					"path": [
+						"aj",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "hash",
+							"value": "{{hash}}"
+						},
+						{
+							"key": "type",
+							"value": "list"
+						},
+						{
+							"key": "a",
+							"value": "tg"
+						},
+						{
+							"key": "id",
+							"value": "464"
+						},
+						{
+							"key": "list",
+							"value": "{{list_id}}"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'http://www.ixigua.net/aj/lists?hash=5b8ea999e9774c1b8e6c3a285c6a92b99a04663e&type=list&a=tg&id=464&list=bmo8vrEBM6QFBEe&_=1764243085599' \\\r\n  -H 'Accept: application/json, text/javascript, */*; q=0.01' \\\r\n  -H 'Accept-Language: zh-CN,zh;q=0.9' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -b 'mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; r=c3RyaW5n; auto=; PHPSESSID=9n3qk80cn502rhogdd8h61qq6b; Hm_lvt_777b72b6411a140ccea21069556babac=1763627359,1763705762,1763952967,1764034490; HMACCOUNT=57B056F1CFF19C07; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764303709%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; last_ads_seen=1764242879; Hm_lpvt_777b72b6411a140ccea21069556babac=1764243086' \\\r\n  -H 'Referer: http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  --insecure"
+			},
+			"response": []
+		},
+		{
+			"name": "添加视频失败-列表类型错误",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// 断言 HTTP 状态码为 200\r",
+							"pm.test(\"HTTP 状态码为 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// 断言 JSON 中 error = 404\r",
+							"pm.test(\"JSON 中 error 字段为 404\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.error).to.eql(404);\r",
+							"});\r",
+							"\r",
+							"// 断言 JSON 中 error_message = 'type not found'\r",
+							"pm.test(\"JSON 中 error_message 字段为 type not found\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.error_message).to.eql(\"type not found\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/javascript, */*; q=0.01"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hash",
+							"value": "5b8ea999e9774c1b8e6c3a285c6a92b99a04663e",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "list",
+							"type": "text"
+						},
+						{
+							"key": "a",
+							"value": "tg",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "464",
+							"type": "text"
+						},
+						{
+							"key": "list",
+							"value": "bmo8vrEBM6QFBEe",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ixigua.net/aj/lists?hash={{hash}}&type=abc&a=tg&id=464&list={{list_id}}",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ixigua",
+						"net"
+					],
+					"path": [
+						"aj",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "hash",
+							"value": "{{hash}}"
+						},
+						{
+							"key": "type",
+							"value": "abc"
+						},
+						{
+							"key": "a",
+							"value": "tg"
+						},
+						{
+							"key": "id",
+							"value": "464"
+						},
+						{
+							"key": "list",
+							"value": "{{list_id}}"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'http://www.ixigua.net/aj/lists?hash=5b8ea999e9774c1b8e6c3a285c6a92b99a04663e&type=list&a=tg&id=464&list=bmo8vrEBM6QFBEe&_=1764243085599' \\\r\n  -H 'Accept: application/json, text/javascript, */*; q=0.01' \\\r\n  -H 'Accept-Language: zh-CN,zh;q=0.9' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -b 'mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; r=c3RyaW5n; auto=; PHPSESSID=9n3qk80cn502rhogdd8h61qq6b; Hm_lvt_777b72b6411a140ccea21069556babac=1763627359,1763705762,1763952967,1764034490; HMACCOUNT=57B056F1CFF19C07; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764303709%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; last_ads_seen=1764242879; Hm_lpvt_777b72b6411a140ccea21069556babac=1764243086' \\\r\n  -H 'Referer: http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  --insecure"
+			},
+			"response": []
+		},
+		{
+			"name": "添加视频失败-视频实际不存在",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"HTTP 状态码为 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"响应 JSON 中 status 字段为 400\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(400);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/javascript, */*; q=0.01"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hash",
+							"value": "5b8ea999e9774c1b8e6c3a285c6a92b99a04663e",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "list",
+							"type": "text"
+						},
+						{
+							"key": "a",
+							"value": "tg",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "464",
+							"type": "text"
+						},
+						{
+							"key": "list",
+							"value": "bmo8vrEBM6QFBEe",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ixigua.net/aj/lists?hash={{hash}}&type=list&a=tg&id=abc&list={{list_id}}",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ixigua",
+						"net"
+					],
+					"path": [
+						"aj",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "hash",
+							"value": "{{hash}}"
+						},
+						{
+							"key": "type",
+							"value": "list"
+						},
+						{
+							"key": "a",
+							"value": "tg"
+						},
+						{
+							"key": "id",
+							"value": "abc"
+						},
+						{
+							"key": "list",
+							"value": "{{list_id}}"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'http://www.ixigua.net/aj/lists?hash=5b8ea999e9774c1b8e6c3a285c6a92b99a04663e&type=list&a=tg&id=464&list=bmo8vrEBM6QFBEe&_=1764243085599' \\\r\n  -H 'Accept: application/json, text/javascript, */*; q=0.01' \\\r\n  -H 'Accept-Language: zh-CN,zh;q=0.9' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -b 'mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; r=c3RyaW5n; auto=; PHPSESSID=9n3qk80cn502rhogdd8h61qq6b; Hm_lvt_777b72b6411a140ccea21069556babac=1763627359,1763705762,1763952967,1764034490; HMACCOUNT=57B056F1CFF19C07; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764303709%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; last_ads_seen=1764242879; Hm_lpvt_777b72b6411a140ccea21069556babac=1764243086' \\\r\n  -H 'Referer: http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  --insecure"
+			},
+			"response": []
+		},
+		{
+			"name": "添加视频失败-列表实际不存在",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"HTTP 状态码为 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 status 字段为 200\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.status).to.eql(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 code 字段为 1\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.code).to.eql(1);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 name 字段为 null\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.name).to.eql(null);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/javascript, */*; q=0.01"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "zh-CN,zh;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hash",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "a",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "list",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ixigua.net/aj/lists?hash={{hash}}&type=list&a=tg&id=464&list=abc",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ixigua",
+						"net"
+					],
+					"path": [
+						"aj",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "hash",
+							"value": "{{hash}}"
+						},
+						{
+							"key": "type",
+							"value": "list"
+						},
+						{
+							"key": "a",
+							"value": "tg"
+						},
+						{
+							"key": "id",
+							"value": "464"
+						},
+						{
+							"key": "list",
+							"value": "abc"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'http://www.ixigua.net/aj/lists?hash=5b8ea999e9774c1b8e6c3a285c6a92b99a04663e&type=list&a=tg&id=464&list=bmo8vrEBM6QFBEe&_=1764243085599' \\\r\n  -H 'Accept: application/json, text/javascript, */*; q=0.01' \\\r\n  -H 'Accept-Language: zh-CN,zh;q=0.9' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -b 'mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; r=c3RyaW5n; auto=; PHPSESSID=9n3qk80cn502rhogdd8h61qq6b; Hm_lvt_777b72b6411a140ccea21069556babac=1763627359,1763705762,1763952967,1764034490; HMACCOUNT=57B056F1CFF19C07; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764303709%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; last_ads_seen=1764242879; Hm_lpvt_777b72b6411a140ccea21069556babac=1764243086' \\\r\n  -H 'Referer: http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  --insecure"
+			},
+			"response": []
+		}
+	]
+}

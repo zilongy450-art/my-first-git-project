@@ -1,0 +1,1778 @@
+{
+	"info": {
+		"_postman_id": "5f8c9f24-1ed6-4bd4-b548-810fda997651",
+		"name": "addr",
+		"description": "### Welcome to Postman! This is your first collection.\n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests  \n• Test your API in real-world scenarios  \n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50038169",
+		"_collection_link": "https://speeding-crater-1223989.postman.co/workspace/yzl's-Workspace~a9d4572f-24c3-4163-82c9-4ad798a942f0/collection/50038169-5f8c9f24-1ed6-4bd4-b548-810fda997651?action=share&source=collection_link&creator=50038169"
+	},
+	"item": [
+		{
+			"name": "添加地址成功",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// 正例测试：添加地址成功\r",
+							"pm.test(\"返回状态码应为 201 Created\", function () {\r",
+							"    pm.response.to.have.status(201); // 检查状态码为 201\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 success 字段为 true\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.success).to.be.true;\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"JSON 中 message 字段为 地址添加成功\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.message).to.eql(\"地址添加成功\");\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"JSON 中 address_id 字段存在\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json).to.have.property(\"address_id\");\r",
+							"});\r",
+							"\r",
+							"\r",
+							"// 解析响应 JSON\r",
+							"let jsonData = pm.response.json();\r",
+							"// 把 address_id 存到变量中（环境变量）\r",
+							"pm.environment.set(\"address_id1\", jsonData.address_id);"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4AB527C4318B39FB74B4BA1ABBCC226B",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <4AB527C4318B39FB74B4BA1ABBCC226B>",
+						"description": "用户认证Token",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "数据格式",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"test\",\r\n    \"name\": \"张三\",\r\n    \"phone\":\"13800138000\",\r\n    \"province\":\"广东省\",\r\n    \"city\":\"深圳市\",\r\n    \"district\":\"南山区\",\r\n    \"detail\":\"科技园路1号\",\r\n    \"is_default\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.31.130:6666/api/address/add",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"130"
+					],
+					"port": "6666",
+					"path": [
+						"api",
+						"address",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "添加失败-没有name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"pm.test(\"返回状态码应为 400\", function () {\r",
+							"    pm.response.to.have.status(400); // 检查状态码为 201\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 success 字段为 false\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.success).to.be.false;\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"JSON 中 message 字段为 缺少必要参数\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.message).to.eql(\"缺少必要参数\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4AB527C4318B39FB74B4BA1ABBCC226B",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <4AB527C4318B39FB74B4BA1ABBCC226B>",
+						"description": "用户认证Token",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "数据格式",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"test\",\r\n    \"phone\":\"13800138000\",\r\n    \"province\":\"广东省\",\r\n    \"city\":\"深圳市\",\r\n    \"district\":\"南山区\",\r\n    \"detail\":\"科技园路1号\",\r\n    \"is_default\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.31.130:6666/api/address/add",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"130"
+					],
+					"port": "6666",
+					"path": [
+						"api",
+						"address",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "添加失败-没有phone",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"返回状态码应为 400\", function () {\r",
+							"    pm.response.to.have.status(400); // 检查状态码为 201\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 success 字段为 false\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.success).to.be.false;\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"JSON 中 message 字段为 缺少必要参数\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.message).to.eql(\"缺少必要参数\");\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4AB527C4318B39FB74B4BA1ABBCC226B",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <4AB527C4318B39FB74B4BA1ABBCC226B>",
+						"description": "用户认证Token",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "数据格式",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"test\",\r\n    \"name\": \"张三\",\r\n   \r\n    \"province\":\"广东省\",\r\n    \"city\":\"深圳市\",\r\n    \"district\":\"南山区\",\r\n    \"detail\":\"科技园路1号\",\r\n    \"is_default\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.31.130:6666/api/address/add",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"130"
+					],
+					"port": "6666",
+					"path": [
+						"api",
+						"address",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "添加失败-没有detail",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"返回状态码应为 400\", function () {\r",
+							"    pm.response.to.have.status(400); // 检查状态码为 201\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 success 字段为 false\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.success).to.be.false;\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"JSON 中 message 字段为 缺少必要参数\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.message).to.eql(\"缺少必要参数\");\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4AB527C4318B39FB74B4BA1ABBCC226B",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <4AB527C4318B39FB74B4BA1ABBCC226B>",
+						"description": "用户认证Token",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "数据格式",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"test\",\r\n    \"name\": \"张三\",\r\n    \"phone\":\"13800138000\",\r\n    \"province\":\"广东省\",\r\n    \"city\":\"深圳市\",\r\n    \"district\":\"南山区\",\r\n    \r\n    \"is_default\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.31.130:6666/api/address/add",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"130"
+					],
+					"port": "6666",
+					"path": [
+						"api",
+						"address",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "添加成功-isdefalut为0",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// 正例测试：添加地址成功\r",
+							"pm.test(\"返回状态码应为 201 Created\", function () {\r",
+							"    pm.response.to.have.status(201); // 检查状态码为 201\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 success 字段为 true\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.success).to.be.true;\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"JSON 中 message 字段为 地址添加成功\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.message).to.eql(\"地址添加成功\");\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"JSON 中 address_id 字段存在\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json).to.have.property(\"address_id\");\r",
+							"});\r",
+							"\r",
+							"\r",
+							"// 解析响应 JSON\r",
+							"let jsonData = pm.response.json();\r",
+							"// 把 address_id 存到变量中（环境变量）\r",
+							"pm.environment.set(\"address_id2\", jsonData.address_id);\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4AB527C4318B39FB74B4BA1ABBCC226B",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <4AB527C4318B39FB74B4BA1ABBCC226B>",
+						"description": "用户认证Token",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "数据格式",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"test\",\r\n    \"name\": \"张三\",\r\n    \"phone\":\"13800138000\",\r\n    \"province\":\"广东省\",\r\n    \"city\":\"深圳市\",\r\n    \"district\":\"南山区\",\r\n    \"detail\":\"科技园路1号\",\r\n    \"is_default\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.31.130:6666/api/address/add",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"130"
+					],
+					"port": "6666",
+					"path": [
+						"api",
+						"address",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "删除地址成功",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//测试成功删除指定地址\r",
+							"// 状态码断言\r",
+							"pm.test(\"状态码应为 200 OK\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 message 字段为 删除地址成功 \", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.message).to.eql(\"地址删除成功\");\r",
+							"});\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4AB527C4318B39FB74B4BA1ABBCC226B",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <4AB527C4318B39FB74B4BA1ABBCC226B>",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"test\",\r\n    \"address_id\": {{address_id2}} \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.31.130:6666/api/address/delete",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"130"
+					],
+					"port": "6666",
+					"path": [
+						"api",
+						"address",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "删除失败-addressid不存在",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"状态码应为 404 Not Found\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 success 字段为 false\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.success).to.be.false;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 message 字段为 地址不存在或无权限删除\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.message).to.eql(\"地址不存在或无权限删除\");\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4AB527C4318B39FB74B4BA1ABBCC226B",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <4AB527C4318B39FB74B4BA1ABBCC226B>",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"test\",\r\n    \"address_id\": \"999999\" \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.31.130:6666/api/address/delete",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"130"
+					],
+					"port": "6666",
+					"path": [
+						"api",
+						"address",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "删除失败-username为空",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"状态码应为 401 UNAUTHORIZED\", function () {\r",
+							"    pm.response.to.have.status(401);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 apiVersion 字段为 1.0\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.apiVersion).to.eql(\"1.0\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 success 字段为 false\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.success).to.be.false;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 data 字段为 null\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.data).to.be.null;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 message 字段为 缺少用户名或Token\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.message).to.eql(\"缺少用户名或Token\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 timestamp 字段存在\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json).to.have.property(\"timestamp\");\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4AB527C4318B39FB74B4BA1ABBCC226B",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <4AB527C4318B39FB74B4BA1ABBCC226B>",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"\",\r\n    \"address_id\": {{address_id1}} \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.31.130:6666/api/address/delete",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"130"
+					],
+					"port": "6666",
+					"path": [
+						"api",
+						"address",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "删除失败-不传addressid",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"// 状态码断言\r",
+							"pm.test(\"状态码应为 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 success 字段为 false\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.success).to.be.false;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 message 字段为缺少地址ID \", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.message).to.eql(\"缺少地址ID\");\r",
+							"});\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4AB527C4318B39FB74B4BA1ABBCC226B",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <4AB527C4318B39FB74B4BA1ABBCC226B>",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"test\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.31.130:6666/api/address/delete",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"130"
+					],
+					"port": "6666",
+					"path": [
+						"api",
+						"address",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更新地址成功",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// 测试成功更新地址信息\r",
+							"// 状态码断言\r",
+							"pm.test(\"状态码应为 200 OK\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 success 字段为 true\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.success).to.be.true;\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"JSON 中 message 字段为 地址更新成功\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.message).to.eql(\"地址更新成功\");\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4AB527C4318B39FB74B4BA1ABBCC226B",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <4AB527C4318B39FB74B4BA1ABBCC226B>",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"test\",\r\n  \"address_id\": {{address_id1}},\r\n  \"name\": \"李四\",\r\n  \"phone\": \"13900139000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.31.130:6666/api/address/update",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"130"
+					],
+					"port": "6666",
+					"path": [
+						"api",
+						"address",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更新成功-没有phone",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// 测试成功更新地址信息\r",
+							"// 状态码断言\r",
+							"pm.test(\"状态码应为 200 OK\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 success 字段为 true\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.success).to.be.true;\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"JSON 中 message 字段为 地址更新成功\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.message).to.eql(\"地址更新成功\");\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4AB527C4318B39FB74B4BA1ABBCC226B",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <4AB527C4318B39FB74B4BA1ABBCC226B>",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"test\",\r\n  \"address_id\": {{address_id1}},\r\n  \"name\": \"李四\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.31.130:6666/api/address/update",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"130"
+					],
+					"port": "6666",
+					"path": [
+						"api",
+						"address",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更新失败-没有addressid",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// 测试成功更新地址信息\r",
+							"// 状态码断言\r",
+							"pm.test(\"状态码应为 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 success 字段为 false\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.success).to.be.false;\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"JSON 中 message 字段为 缺少地址ID\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.message).to.eql(\"缺少地址ID\");\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4AB527C4318B39FB74B4BA1ABBCC226B",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <4AB527C4318B39FB74B4BA1ABBCC226B>",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"test\",\r\n  \"name\": \"李四\",\r\n  \"phone\": \"13900139000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.31.130:6666/api/address/update",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"130"
+					],
+					"port": "6666",
+					"path": [
+						"api",
+						"address",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更新失败-不存在的addressid",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// 测试成功更新地址信息\r",
+							"// 状态码断言\r",
+							"pm.test(\"状态码应为 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 success 字段为false\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.success).to.be.false;\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"JSON 中 message 字段为 地址不存在或无权限修改\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.message).to.eql(\"地址不存在或无权限修改\");\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4AB527C4318B39FB74B4BA1ABBCC226B",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <4AB527C4318B39FB74B4BA1ABBCC226B>",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"test\",\r\n  \"address_id\": 999999,\r\n  \"name\": \"李四\",\r\n  \"phone\": \"13900139000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.31.130:6666/api/address/update",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"130"
+					],
+					"port": "6666",
+					"path": [
+						"api",
+						"address",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "查询地址成功",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//  测试成功查询用户的地址列表\r",
+							"// 状态码断言\r",
+							"pm.test(\"状态码应为 200 OK\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 success 字段为 true\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.success).to.be.true;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 data 字段为数组\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.data).to.be.an('array');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 data 数组不为空\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.data.length).to.be.above(0);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4AB527C4318B39FB74B4BA1ABBCC226B",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.31.130:6666/api/address/list",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"130"
+					],
+					"port": "6666",
+					"path": [
+						"api",
+						"address",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "查询失败-username错误",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// 状态码断言\r",
+							"pm.test(\"状态码应为 401 UNAUTHORIZED\", function () {\r",
+							"    pm.response.to.have.status(401);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 apiVersion 字段为 1.0\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.apiVersion).to.eql(\"1.0\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 success 字段为 false\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.success).to.be.false;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 data 字段为 null\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.data).to.be.null;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 message 字段为 Token验证失败\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.message).to.eql(\"Token验证失败\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 timestamp 字段存在\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json).to.have.property(\"timestamp\");\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4AB527C4318B39FB74B4BA1ABBCC226B",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"abc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.31.130:6666/api/address/list",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"130"
+					],
+					"port": "6666",
+					"path": [
+						"api",
+						"address",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "查询失败-username为空",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// 状态码断言\r",
+							"pm.test(\"状态码应为 401 UNAUTHORIZED\", function () {\r",
+							"    pm.response.to.have.status(401);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 apiVersion 字段为 1.0\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.apiVersion).to.eql(\"1.0\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 success 字段为 false\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.success).to.be.false;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 data 字段为 null\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.data).to.be.null;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 message 字段为 缺少用户名或Token\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.message).to.eql(\"缺少用户名或Token\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 timestamp 字段存在\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json).to.have.property(\"timestamp\");\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4AB527C4318B39FB74B4BA1ABBCC226B",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.31.130:6666/api/address/list",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"130"
+					],
+					"port": "6666",
+					"path": [
+						"api",
+						"address",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "查询失败-没有username",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// 状态码断言\r",
+							"pm.test(\"状态码应为 401 UNAUTHORIZED\", function () {\r",
+							"    pm.response.to.have.status(401);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 apiVersion 字段为 1.0\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.apiVersion).to.eql(\"1.0\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 success 字段为 false\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.success).to.be.false;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 data 字段为 null\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.data).to.be.null;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 message 字段为 缺少用户名或Token\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.message).to.eql(\"缺少用户名或Token\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 timestamp 字段存在\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json).to.have.property(\"timestamp\");\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4AB527C4318B39FB74B4BA1ABBCC226B",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.31.130:6666/api/address/list",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"130"
+					],
+					"port": "6666",
+					"path": [
+						"api",
+						"address",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "设置默认地址成功",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// 测试成功设置默认收货地址\r",
+							"// 状态码断言\r",
+							"pm.test(\"状态码应为 200 OK\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 success 字段为 true\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.success).to.be.true;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 message 字段为 默认地址设置成功\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.message).to.eql(\"默认地址设置成功\");\r",
+							"});\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4AB527C4318B39FB74B4BA1ABBCC226B",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  <token>",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"test\",\r\n    \"address_id\": {{address_id1}}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.31.130:6666/api/address/set_default",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"130"
+					],
+					"port": "6666",
+					"path": [
+						"api",
+						"address",
+						"set_default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "设置失败-addressid不存在",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"状态码应为 404 Not Found\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 success 字段为 false\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.success).to.be.false;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 message 字段为 地址不存在或无权限操作\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.message).to.eql(\"地址不存在或无权限操作\");\r",
+							"});\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4AB527C4318B39FB74B4BA1ABBCC226B",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  <token>",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"test\",\r\n    \"address_id\": 999999\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.31.130:6666/api/address/set_default",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"130"
+					],
+					"port": "6666",
+					"path": [
+						"api",
+						"address",
+						"set_default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "设置失败-没有addressid字段",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"状态码应为 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 success 字段为 false\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.success).to.be.false;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSON 中 message 字段为 缺少地址ID\", function () {\r",
+							"    var json = pm.response.json();\r",
+							"    pm.expect(json.message).to.eql(\"缺少地址ID\");\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4AB527C4318B39FB74B4BA1ABBCC226B",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  <token>",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.31.130:6666/api/address/set_default",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"31",
+						"130"
+					],
+					"port": "6666",
+					"path": [
+						"api",
+						"address",
+						"set_default"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "address_id",
+			"value": ""
+		}
+	]
+}

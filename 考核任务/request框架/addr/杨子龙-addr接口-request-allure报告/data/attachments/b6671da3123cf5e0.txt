@@ -1,0 +1,1 @@
+curl -X POST --data-raw '{"username": "test", "address_id": 5933}' -H 'Authorization: Bearer 4AB527C4318B39FB74B4BA1ABBCC226B' -H 'Content-Type: application/json' http://192.168.31.130:6666/api/address/set_default

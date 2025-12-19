@@ -1,0 +1,50 @@
+INFO     api_automation:test_executor.py:28 开始执行测试用例: 15 - 列表模块-添加视频接口-参数校验-视频实际不存在返回错误提示
+WARNING  api_automation:data_handler.py:75 变量 list_id 未找到
+WARNING  api_automation:data_handler.py:75 变量 list_id 未找到
+WARNING  api_automation:test_executor.py:87 body JSON解析失败: Expecting value: line 1 column 1 (char 0), 使用空字典
+INFO     api_automation:test_executor.py:92 发送 GET 请求到 aj/lists?hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&type=list&a=tg&id=abc&list=${list_id}
+INFO     api_automation:request_handler.py:169 ==================================================
+INFO     api_automation:request_handler.py:170 请求方法: GET
+INFO     api_automation:request_handler.py:171 Curl命令: curl -X GET --data-raw '' -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'Accept-Encoding: gzip, deflate' -H 'Accept-Language: zh-CN,zh;q=0.9' -H 'Cookie: mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; PHPSESSID=sqr9mmvquakk4u9v2ovddjjjcj; r=c3RyaW5n; Hm_lvt_777b72b6411a140ccea21069556babac=1764034490,1764308798,1764558449,1764756516; HMACCOUNT=57B056F1CFF19C07; auto=; last_ads_seen=1764863384; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764984301%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; Hm_lpvt_777b72b6411a140ccea21069556babac=1764902184' -H 'Host: www.ixigua.net' -H 'Proxy-Connection: keep-alive' -H 'Referer: http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' -H 'X-Requested-With: XMLHttpRequest' 'http://www.ixigua.net/aj/lists?hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&type=list&a=tg&id=abc&list=${list_id}'
+INFO     api_automation:request_handler.py:172 请求URL: http://www.ixigua.net/aj/lists?hash=422e32a528a0e8096020a598d2c9d7af7c32d90b&type=list&a=tg&id=abc&list=${list_id}
+INFO     api_automation:request_handler.py:173 请求头: {
+  "Accept": "application/json, text/javascript, */*; q=0.01",
+  "Accept-Encoding": "gzip, deflate",
+  "Accept-Language": "zh-CN,zh;q=0.9",
+  "Cookie": "mode=night; SITE_TOTAL_ID=fd6b14f36abb36a67f6f46a3c4abafd7; cookieconsent_status=dismiss; user_id=9fa2b8188a8dd588270be0025e91ba7bb85e3aae176154479598df3a1b0c226f84ca52a0585fa88202; views=a%3A1%3A%7Bi%3A0%3Ba%3A2%3A%7Bi%3A0%3Bi%3A554%3Bi%3A1%3Bs%3A40%3A%26quot%3B3397aab8e388b849b7534fcbb0733667abb1ca7d%26quot%3B%3B%7D%7D; PHPSESSID=sqr9mmvquakk4u9v2ovddjjjcj; r=c3RyaW5n; Hm_lvt_777b72b6411a140ccea21069556babac=1764034490,1764308798,1764558449,1764756516; HMACCOUNT=57B056F1CFF19C07; auto=; last_ads_seen=1764863384; _uads=a%3A2%3A%7Bs%3A4%3A%26quot%3Bdate%26quot%3B%3Bi%3A1764984301%3Bs%3A5%3A%26quot%3Buaid_%26quot%3B%3Ba%3A0%3A%7B%7D%7D; next_up_videos=%5B%22464%22%5D; Hm_lpvt_777b72b6411a140ccea21069556babac=1764902184",
+  "Host": "www.ixigua.net",
+  "Proxy-Connection": "keep-alive",
+  "Referer": "http://www.ixigua.net/watch/apex%E7%9B%91%E8%A7%86_sPf5PJooYwWBNew.html",
+  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+  "X-Requested-With": "XMLHttpRequest",
+  "Content-Type": "application/x-www-form-urlencoded"
+}
+INFO     api_automation:request_handler.py:204 通过content-type检查到为json类型，请求开始发送
+INFO     api_automation:request_handler.py:205 请求JSON数据: {}
+INFO     api_automation:request_handler.py:212 ------------------------------
+INFO     api_automation:request_handler.py:235 收到响应
+INFO     api_automation:request_handler.py:236 状态码: 200
+INFO     api_automation:request_handler.py:237 响应头: {
+  "Transfer-Encoding": "chunked",
+  "Cache-Control": "no-store, no-cache, must-revalidate",
+  "Connection": "keep-alive",
+  "Content-Encoding": "gzip",
+  "Content-Type": "application/json",
+  "Date": "Fri, 05 Dec 2025 09:08:46 GMT",
+  "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+  "Keep-Alive": "timeout=4",
+  "Pragma": "no-cache",
+  "Proxy-Connection": "keep-alive",
+  "Server": "nginx",
+  "Vary": "Accept-Encoding"
+}
+INFO     api_automation:request_handler.py:238 响应体: {"status":400}
+INFO     api_automation:request_handler.py:239 耗时: 0.177927秒
+INFO     api_automation:request_handler.py:240 ==================================================
+INFO     api_automation:test_executor.py:113 执行状态码断言: 期望 200 实际 200
+INFO     api_automation:assert_handler.py:114 断言成功: 响应内容包含标准化后的 '200'
+INFO     api_automation:test_executor.py:130 执行内容包含断言: 期望包含 '{
+    "status": 400
+}'
+INFO     api_automation:assert_handler.py:114 断言成功: 响应内容包含标准化后的 '{"status":400}'
+INFO     api_automation:test_executor.py:280 测试用例执行完成: 15 - 列表模块-添加视频接口-参数校验-视频实际不存在返回错误提示
